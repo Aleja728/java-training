@@ -9,10 +9,12 @@ import java.util.function.Supplier;
 
 public class LambdaSuite {
 
-    @FunctionalInterface
+    //@FunctionalInterface
     interface InterfaceDeEjemplo{
         int metodoDeEjemplo(int x, int y);
     }
+
+
 
     class ClaseDeEjemplo{
         public int metodoDeEjemplo1(int z, InterfaceDeEjemplo i){
@@ -163,8 +165,36 @@ public class LambdaSuite {
         ClaseDeEjemplo5 instancia = new ClaseDeEjemplo5();
 
         instancia.operarConConsumer1(c1);
-
-
     }
+
+
+
+
+    @FunctionalInterface
+    interface InterfaceDeEjemplo2{
+        Consumer<Integer> metodoDeEjemplo2(Supplier<Integer> a, Supplier<Integer> b, Supplier<Integer> c);
+    }
+
+
+    @Test
+    public void ejercicio(){
+
+        InterfaceDeEjemplo2 i = (x,y,z)->{
+            Consumer<Integer> c = n -> {
+                Integer resultado = a.get() + b.get() + c.get()+n;
+                System.out.println("Consumer: " +resultado)
+            };
+            return c;
+        };
+
+        Supplier a = () ->  1;
+        Supplier b = () ->  2;
+        Supplier c = () ->  3;
+
+        Consumer<Integer> consumer = i.metodoDeEjemplo2(a, b, c);
+
+        consumer.accept(new Integer(9));
+    }
+
 
 }
