@@ -1,0 +1,36 @@
+[0m[[0m[0mdebug[0m] [0m[0m[34mTest run started[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mListSuite[0m.[36mtestZipWithIndex[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mListSuite[0m.[36mtestZipWithIndex[0m finished, took 0.016 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mListSuite[0m.[36mtestLIFORetrieval[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mListSuite[0m.[36mtestLIFORetrieval[0m finished, took 0.0 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mListSuite[0m.[36mtestZipOnEmptyList[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mListSuite[0m.[36mtestZipOnEmptyList[0m finished, took 0.005 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mListSuite[0m.[36mtestMap[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mListSuite[0m.[36mtestMap[0m finished, took 0.009 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mListSuite[0m.[36mtestZip[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mListSuite[0m.[36mtestZip[0m finished, took 0.002 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mListSuite[0m.[36mtestListToTakeWhile[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mListSuite[0m.[36mtestListToTakeWhile[0m finished, took 0.002 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mListSuite[0m.[36mtestHead[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mListSuite[0m.[36mtestHead[0m finished, took 0.0 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mListSuite[0m.[36mtestSpan[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mListSuite[0m.[36mtestSpan[0m finished, took 0.034 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mListSuite[0m.[36mtestTail[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mListSuite[0m.[36mtestTail[0m finished, took 0.0 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mListSuite[0m.[36mtestSlidingWithExplicitStep[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mListSuite[0m.[36mtestSlidingWithExplicitStep[0m finished, took 0.025 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mListSuite[0m.[36mtestListStack[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mListSuite[0m.[36mtestListStack[0m finished, took 0.0 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mListSuite[0m.[36mtestListOfNull[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mListSuite[0m.[36mtestListOfNull[0m finished, took 0.001 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mListSuite[0m.[36mtestZipWhenEmpty[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mListSuite[0m.[36mtestZipWhenEmpty[0m finished, took 0.001 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mListSuite[0m.[36mtestListIsImmutable[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mListSuite[0m.[36mtestListIsImmutable[0m finished, took 0.0 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mListSuite[0m.[36mtestFilter[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mListSuite[0m.[36mtestFilter[0m finished, took 0.0 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mListSuite[0m.[36mtestZipWhenNotEmpty[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mListSuite[0m.[36mtestZipWhenNotEmpty[0m finished, took 0.001 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mListSuite[0m.[36mtestSliding[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mListSuite[0m.[36mtestSliding[0m finished, took 0.001 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0m[34mTest run finished: [0m[34m0 failed[0m[34m, [0m[34m0 ignored[0m[34m, 17 total, 0.142s[0m[0m

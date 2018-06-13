@@ -1,0 +1,32 @@
+[0m[[0m[0mdebug[0m] [0m[0m[34mTest run started[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mEitherSuite[0m.[36mswapToEither[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mEitherSuite[0m.[36mswapToEither[0m finished, took 0.013 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mEitherSuite[0m.[36mtestPatternMatchingRightSide[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mEitherSuite[0m.[36mtestPatternMatchingRightSide[0m finished, took 0.033 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mEitherSuite[0m.[36mtestOrElseRun[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mEitherSuite[0m.[36mtestOrElseRun[0m finished, took 0.001 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mEitherSuite[0m.[36mtestEitherBiMap[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mEitherSuite[0m.[36mtestEitherBiMap[0m finished, took 0.002 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mEitherSuite[0m.[36mtestEitherMap[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mEitherSuite[0m.[36mtestEitherMap[0m finished, took 0.001 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mEitherSuite[0m.[36mpeekToEither[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mEitherSuite[0m.[36mpeekToEither[0m finished, took 0.001 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mEitherSuite[0m.[36mtestPatternMatchingLeftSide[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mEitherSuite[0m.[36mtestPatternMatchingLeftSide[0m finished, took 0.017 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mEitherSuite[0m.[36mtestFoldLeft[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mEitherSuite[0m.[36mtestFoldLeft[0m finished, took 0.004 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mEitherSuite[0m.[36mtestFoldRight[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mEitherSuite[0m.[36mtestFoldRight[0m finished, took 0.009 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mEitherSuite[0m.[36mtestEitherFilter[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mEitherSuite[0m.[36mtestEitherFilter[0m finished, took 0.003 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mEitherSuite[0m.[36mtestEitherFilter2[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mEitherSuite[0m.[36mtestEitherFilter2[0m finished, took 0.002 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mEitherSuite[0m.[36mtestNarrow[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mEitherSuite[0m.[36mtestNarrow[0m finished, took 0.001 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mEitherSuite[0m.[36mtestEitherFlatMap[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mEitherSuite[0m.[36mtestEitherFlatMap[0m finished, took 0.0 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mEitherSuite[0m.[36mtestProjection[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mEitherSuite[0m.[36mtestProjection[0m finished, took 0.001 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mEitherSuite[0m.[36mtestFoldWithTwoMappers[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mEitherSuite[0m.[36mtestFoldWithTwoMappers[0m finished, took 0.002 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0m[34mTest run finished: [0m[34m0 failed[0m[34m, [0m[34m0 ignored[0m[34m, 15 total, 0.151s[0m[0m

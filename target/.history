@@ -1,0 +1,37 @@
+;set _root_.scala.collection.Seq(shellPrompt := { _ => "" },SettingKey[_root_.scala.Option[_root_.sbt.File]]("sbtStructureOutputFile") in _root_.sbt.Global := _root_.scala.Some(_root_.sbt.file("/tmp/sbt-structure.xml")),SettingKey[_root_.java.lang.String]("sbtStructureOptions") in _root_.sbt.Global := "download, resolveClassifiers");apply -cp "/home/s4n/.IdeaIC2018.1/config/plugins/Scala/launcher/sbt-structure-1.0.jar" org.jetbrains.sbt.CreateTasks;*/*:dumpStructure
+exit
+compile
+test
+testOnly co.com.s4n.training.java.jdk.LambdaSuite
+exit
+testOnly co.com.s4n.training.java.jdk.LambdaSuite
+exit
+;set _root_.scala.collection.Seq(shellPrompt := { _ => "" },SettingKey[_root_.scala.Option[_root_.sbt.File]]("sbtStructureOutputFile") in _root_.sbt.Global := _root_.scala.Some(_root_.sbt.file("/tmp/sbt-structure.xml")),SettingKey[_root_.java.lang.String]("sbtStructureOptions") in _root_.sbt.Global := "download, resolveClassifiers");apply -cp "/home/s4n/.IdeaIC2018.1/config/plugins/Scala/launcher/sbt-structure-1.0.jar" org.jetbrains.sbt.CreateTasks;*/*:dumpStructure
+exit
+testOnly co.com.s4n.training.java.jdk.LambdaSuite
+exit
+;set _root_.scala.collection.Seq(shellPrompt := { _ => "" },SettingKey[_root_.scala.Option[_root_.sbt.File]]("sbtStructureOutputFile") in _root_.sbt.Global := _root_.scala.Some(_root_.sbt.file("/tmp/sbt-structure.xml")),SettingKey[_root_.java.lang.String]("sbtStructureOptions") in _root_.sbt.Global := "download, resolveClassifiers");apply -cp "/home/s4n/.IdeaIC2018.1/config/plugins/Scala/launcher/sbt-structure-1.0.jar" org.jetbrains.sbt.CreateTasks;*/*:dumpStructure
+exit
+testOnly co.com.s4n.training.java.jdk.LambdaSuite
+testOnly co.com.s4n.training.java.jdk.StreamsSuite
+exit
+testOnly co.com.s4n.training.java.jdk.StreamsSuite
+;set _root_.scala.collection.Seq(shellPrompt := { _ => "" },SettingKey[_root_.scala.Option[_root_.sbt.File]]("sbtStructureOutputFile") in _root_.sbt.Global := _root_.scala.Some(_root_.sbt.file("/tmp/sbt-structure.xml")),SettingKey[_root_.java.lang.String]("sbtStructureOptions") in _root_.sbt.Global := "download, resolveClassifiers");apply -cp "/home/s4n/.IdeaIC2018.1/config/plugins/Scala/launcher/sbt-structure-1.0.jar" org.jetbrains.sbt.CreateTasks;*/*:dumpStructure
+testOnly co.com.s4n.training.java.jdk.StreamsSuite
+compile
+testOnly co.com.s4n.training.java.jdk.StreamsSuite
+testOnly co.com.s4n.training.java.jdk.StreamsSuite.java
+testOnly co.com.s4n.training.java.jdk.StreamsSuite
+exit
+testOnly co.com.s4n.training.java.jdk.StreamsSuite
+git add *
+sbt
+git branch -d streams
+exit
+testOnly co.com.s4n.training.java.jdk.StreamsSuite
+git commit -m "Ejemplo Streams con Lista Vacía"
+exit
+testOnly co.com.s4n.training.java.jdk.StreamsSuite
+exit
+testOnly co.com.s4n.training.java.jdk.StreamsSuite
+exit
