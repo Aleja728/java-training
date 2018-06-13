@@ -1,5 +1,1 @@
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(co.com.s4n.training.java.jdk.StreamsSuite, com.novocode.junit.JUnitFingerprint@3247a2c6, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mSummary for JUnit not available.[0m
-[0m[[0m[0minfo[0m] [0m[0mPassed: Total 25, Failed 0, Errors 0, Passed 25[0m
-[0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	co.com.s4n.training.java.jdk.StreamsSuite[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(co.com.s4n.training.java.jdk.CompletableFutureSuite, com.novocode.junit.JUnitFingerprint@1544f44b, false, [SuiteSelector])[0m

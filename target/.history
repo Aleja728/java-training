@@ -35,3 +35,5 @@ testOnly co.com.s4n.training.java.jdk.StreamsSuite
 exit
 testOnly co.com.s4n.training.java.jdk.StreamsSuite
 exit
+testOnly co.com.s4n.training.java.jdk.CompletableFutureSuite
+exit

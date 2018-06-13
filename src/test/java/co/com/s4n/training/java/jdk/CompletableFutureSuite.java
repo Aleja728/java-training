@@ -6,6 +6,9 @@ import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.concurrent.*;
+import java.util.Date;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 
 public class CompletableFutureSuite {
 
@@ -15,6 +18,12 @@ public class CompletableFutureSuite {
         }catch(Exception e){
             System.out.println("Problemas durmiendo hilo");
         }
+    }
+
+    public void imprimirMensaje(String mensaje){
+        Date date = new Date();
+        DateFormat formatoFecha = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss.SSS - ");
+        System.out.println(formatoFecha.format(date)+mensaje);
     }
 
     @Test
@@ -126,12 +135,13 @@ public class CompletableFutureSuite {
         //thenApply acepta lambdas de aridad 1 con retorno
         CompletableFuture<String> future = completableFuture
                 .thenApply(s -> {
-                    System.out.println(testName + " - future corriendo en el thread: "+Thread.currentThread().getName());
-
+                    imprimirMensaje(testName + " - future corriendo en el thread: "+Thread.currentThread().getName());
+                    sleep(500);
                     return s + " World";
+
                 })
                 .thenApply(s -> {
-                    System.out.println(testName + " - future corriendo en el thread: "+Thread.currentThread().getName());
+                    imprimirMensaje(testName + " - future corriendo en el thread: "+Thread.currentThread().getName());
 
                     return s + "!";
                 });
@@ -159,10 +169,11 @@ public class CompletableFutureSuite {
         // analice el segundo thenAccept ¿Tiene sentido?
         CompletableFuture<Void> future = completableFuture
                 .thenAccept(s -> {
-                    System.out.println(testName + " - future corriendo en el thread: " + Thread.currentThread().getName() + " lo que viene del futuro es: "+s);
+                    imprimirMensaje(testName + " - future corriendo en el thread: " + Thread.currentThread().getName() + " lo que viene del futuro es: "+s);
+                    sleep(500);
                 })
                 .thenAccept(s -> {
-                    System.out.println(testName + " - future corriendo en el thread: " + Thread.currentThread().getName() + " lo que viene del futuro es: "+s);
+                    imprimirMensaje(testName + " - future corriendo en el thread: " + Thread.currentThread().getName() + " lo que viene del futuro es: "+s);
                 });
 
     }
@@ -180,11 +191,14 @@ public class CompletableFutureSuite {
         //thenAccept solo acepta Consumer (lambdas de aridad 1 que no tienen retorno)
         CompletableFuture<Void> future = completableFuture
                 .thenRun(() -> {
-                    System.out.println(testName + " - future corriendo en el thread: " + Thread.currentThread().getName());
+                    imprimirMensaje(testName + " - future corriendo en el thread: " + Thread.currentThread().getName());
+                    sleep(500);
                 })
                 .thenRun(() -> {
-                    System.out.println(testName + " - future corriendo en el thread: " + Thread.currentThread().getName());
+                    imprimirMensaje(testName + " - future corriendo en el thread: " + Thread.currentThread().getName());
                 });
+
+
 
     }
 
