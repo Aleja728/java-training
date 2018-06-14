@@ -291,4 +291,38 @@ public class OptionSuite {
                                    For(esPar(4), c -> Option(d+c))).toOption();
         assertEquals(integers,Some(6));
     }
+
+    private Option<Integer> sumar(int a, int b){
+        System.out.println("sumando " +a+ " + "+b);
+        return Option.of(a+b);
+    }
+
+    private Option<Integer> restar(int a, int b){
+        System.out.println("restando " + a +"- "+b);
+        return a-b>0 ? Option.of(a-b) : None();
+    }
+
+    @Test
+    public void flatMapInOption1(){
+        Option<Integer> op =
+                sumar(1,1)
+                .flatMap(a -> sumar(a,1)
+                        .flatMap(b -> restar(b,4))
+                            .flatMap(c -> sumar(c,1)
+                                .flatMap(d -> sumar(d,1)
+
+            )));
+
+        assertEquals(op,None());
+        assertEquals(op.getOrElse(666).intValue(),666);
+    }
+
+    @Test
+    public void flatMapInOption(){
+        Option<Integer> o1 = Option.of(1);
+        Option<Option<Integer>> m = o1.map(i -> Option(identidadPosibleNull(i.intValue()-3)));
+        Option<Integer> y = o1
+                .flatMap(i -> Option.of(identidadPosibleNull(i.intValue()-3)));
+
+    }
 }

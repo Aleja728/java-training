@@ -15,20 +15,11 @@
 [0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated classes: Set(co.com.s4n.training.java.vavr.OptionSuite)[0m
 [0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated sources:Set(/home/s4n/Desktop/java-training/src/test/java/co/com/s4n/training/java/vavr/OptionSuite.java)[0m
 [0m[[0m[0minfo[0m] [0m[0mCompiling 1 Java source to /home/s4n/Desktop/java-training/target/test-classes ...[0m
-[0m[[0m[0mdebug[0m] [0m[0mAttempting to call com.sun.tools.javac.api.JavacTool@23145a53 directly...[0m
-[0m[[0m[0mdebug[0m] [0m[0mJava compilation took 0.198506367 s[0m
-[0m[[0m[0mdebug[0m] [0m[0mJava analysis took 0.020693955 s[0m
-[0m[[0m[0mdebug[0m] [0m[0mJava compilation + analysis took 0.220153433 s[0m
+[0m[[0m[0mdebug[0m] [0m[0mAttempting to call com.sun.tools.javac.api.JavacTool@b4cf1b directly...[0m
+[0m[[0m[0mdebug[0m] [0m[0mJava compilation took 0.30580455 s[0m
+[0m[[0m[0mdebug[0m] [0m[0mJava analysis took 0.025021781 s[0m
+[0m[[0m[0mdebug[0m] [0m[0mJava compilation + analysis took 0.331631592 s[0m
 [0m[[0m[0minfo[0m] [0m[0mDone compiling.[0m
-[0m[[0m[0mdebug[0m] [0m[0mInvalidating (transitively) by inheritance from co.com.s4n.training.java.vavr.OptionSuite...[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: Set(co.com.s4n.training.java.vavr.OptionSuite)[0m
-[0m[[0m[0mdebug[0m] [0m[0mInvalidated by transitive inheritance dependency: Set(co.com.s4n.training.java.vavr.OptionSuite)[0m
-[0m[[0m[0mdebug[0m] [0m[0mChange NamesChange(co.com.s4n.training.java.vavr.OptionSuite,ModifiedNames(changes = UsedName(mapInOptionNone,[Default]))) invalidates 1 classes due to The co.com.s4n.training.java.vavr.OptionSuite has the following regular definitions changed:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	UsedName(mapInOptionNone,[Default]).[0m
-[0m[[0m[0mdebug[0m] [0m[0m	> by transitive inheritance: Set(co.com.s4n.training.java.vavr.OptionSuite)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	> [0m
-[0m[[0m[0mdebug[0m] [0m[0m	> [0m
-[0m[[0m[0mdebug[0m] [0m[0m        [0m
 [0m[[0m[0mdebug[0m] [0m[0mNew invalidations:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: Set()[0m
