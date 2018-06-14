@@ -25,6 +25,74 @@ import static org.junit.Assert.assertTrue;
 public class OptionSuite {
 
 
+    @Test
+    public void testConstruction1(){
+        Option<Integer> o =Option(1);
+        assertTrue(o.isDefined());
+        assertEquals(o,Some(1));
+    }
+
+    @Test
+    public void testConstruction2(){
+        Option<Integer> o =Option(null);
+        assertEquals(o,Option.none());
+    }
+
+    private Boolean esParPosibleNull(int i){
+        boolean res = false;
+        if(i%2 ==0){
+            return new Boolean(true);
+        }else{
+            return null;
+        }
+    }
+
+    private Integer identidadPosibleNull(int i){
+        boolean res = false;
+        if(i%2 ==0){
+            return new Integer(i);
+        }else{
+            return null;
+        }
+    }
+
+    @Test
+    public void testConstruction3(){
+        Option<Boolean> b = Option(esParPosibleNull(1));
+        assertEquals(b,Option.none());
+    }
+
+    @Test
+    public void testFilter(){
+        Option<Integer> b = Option(identidadPosibleNull(2));
+        Option<Integer> r = b.filter(x-> x.intValue()<4);
+        assertEquals(r.getOrElse(666).intValue(),2);
+    }
+
+    @Test
+    public void testFilterNone(){
+        Option<Integer> b = Option(identidadPosibleNull(1));
+        Option<Integer> r = b.filter(x-> x.intValue()<4);
+        assertEquals(r,Option.none());
+    }
+
+
+    @Test
+    public void mapInOption(){
+        Option<Integer> b = Option(identidadPosibleNull(8));
+        Option<Integer> b1 = b.map(x->x-8);
+
+        assertEquals(b1,Some(0));
+    }
+
+    @Test
+    public void mapInOptionNone(){
+        Option<Integer> b = Option(identidadPosibleNull(3));
+        Option<Integer> b1 = b.map(x->x-8);
+
+        assertEquals(b1, Option.none());
+    }
+
     /**
      * Un option se puede filtar, y mostrar un some() o un none si no encuentra el resultado
      */
