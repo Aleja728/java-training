@@ -3,3 +3,5 @@ testOnly co.com.s4n.training.java.vavr.OptionSuite
 exit
 testOnly co.com.s4n.training.java.vavr.OptionSuite
 exit
+testOnly co.com.s4n.training.java.vavr.OptionSuite
+exit

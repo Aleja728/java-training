@@ -1,5 +1,6 @@
 package co.com.s4n.training.java.vavr;
 
+import com.sun.org.apache.bcel.internal.generic.FieldOrMethod;
 import org.junit.Test;
 
 
@@ -315,6 +316,17 @@ public class OptionSuite {
 
         assertEquals(op,None());
         assertEquals(op.getOrElse(666).intValue(),666);
+    }
+
+    @Test
+    public void flatMapInOptionconFor(){
+
+        Option<Integer> resultado =
+                For(sumar(1,1), r1 ->
+                For(sumar(r1,1), r2 ->
+                For(sumar(r2,1), r3 -> sumar(r3,1)))).toOption();
+
+        assertEquals(resultado.getOrElse(666).intValue(),5);
     }
 
     @Test
