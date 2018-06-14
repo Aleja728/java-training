@@ -1,0 +1,6 @@
+[0m[[0m[33mwarn[0m] [0m[0m/home/s4n/Desktop/java-training/src/test/java/co/com/s4n/training/java/vavr/ListSuite.java:29:1: non-varargs call of varargs method with inexact argument type for last parameter;[0m
+[0m[[0m[33mwarn[0m] [0m[0m  cast to java.lang.String for a varargs call[0m
+[0m[[0m[33mwarn[0m] [0m[0m  cast to java.lang.String[] for a non-varargs call and to suppress this warning[0m
+[0m[[0m[33mwarn[0m] [0m[0m        List<String> list1 = List.of(null);[0m
+[0m[[0m[0minfo[0m] [0m[0m/home/s4n/Desktop/java-training/src/test/java/co/com/s4n/training/java/vavr/ListSuite.java: /home/s4n/Desktop/java-training/src/test/java/co/com/s4n/training/java/vavr/ListSuite.java uses unchecked or unsafe operations.[0m
+[0m[[0m[0minfo[0m] [0m[0m/home/s4n/Desktop/java-training/src/test/java/co/com/s4n/training/java/vavr/ListSuite.java: Recompile with -Xlint:unchecked for details.[0m
