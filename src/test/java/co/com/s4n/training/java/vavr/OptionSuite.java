@@ -39,7 +39,7 @@ public class OptionSuite {
     }
 
     private Boolean esParPosibleNull(int i){
-        boolean res = false;
+
         if(i%2 ==0){
             return new Boolean(true);
         }else{
@@ -48,7 +48,7 @@ public class OptionSuite {
     }
 
     private Integer identidadPosibleNull(int i){
-        boolean res = false;
+
         if(i%2 ==0){
             return new Integer(i);
         }else{
