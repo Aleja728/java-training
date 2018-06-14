@@ -1,6 +1,6 @@
 #Successful Tests
-#Wed Jun 13 16:41:20 COT 2018
-co.com.s4n.training.java.jdk.CompletableFutureSuite=1528926079998
+#Thu Jun 14 10:52:54 COT 2018
+co.com.s4n.training.java.jdk.CompletableFutureSuite=1528991574112
 co.com.s4n.training.java.jdk.StreamsSuite=1528914553695
 co.com.s4n.training.java.vavr.TrySuite=1528820922023
 co.com.s4n.training.java.vavr.EitherSuite=1528820921829
