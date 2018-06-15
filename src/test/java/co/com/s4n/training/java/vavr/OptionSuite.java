@@ -1,5 +1,6 @@
 package co.com.s4n.training.java.vavr;
 
+import co.com.s4n.training.java.Factura;
 import org.junit.Test;
 
 
@@ -222,5 +223,26 @@ public class OptionSuite {
         Option<Integer> integers = For(esPar(2), d ->
                                    For(esPar(4), c -> Option(d+c))).toOption();
         assertEquals(integers,Some(6));
+    }
+
+    @Test
+    public void FacturaFlatMap1(){
+        Option<Double> valorTotal =
+                Factura.calcularSubTotal("cuaderno,10000;lapiz,2000")
+                        .flatMap(a -> Factura.calcularDescuentos(a,20)
+                                .flatMap(b -> Factura.calcularRetencion(b,19)
+                        ));
+
+        assertEquals(Some(7776.0),valorTotal);
+    }
+
+    @Test
+    public void FacturaFlapMap2(){
+
+        Option<Double> valorTotal =
+                For(Factura.calcularSubTotal("cuaderno,10000;lapiz,2000"), a ->
+                        For(Factura.calcularDescuentos(a,20), b -> Factura.calcularRetencion(b,19))).toOption();
+
+       assertEquals(Some(7776.0),7766.0);
     }
 }
