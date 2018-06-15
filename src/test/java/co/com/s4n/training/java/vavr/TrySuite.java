@@ -1,5 +1,6 @@
 package co.com.s4n.training.java.vavr;
 
+import co.com.s4n.training.java.Factura;
 import io.vavr.CheckedFunction1;
 import io.vavr.CheckedFunction2;
 import io.vavr.Function1;
@@ -10,12 +11,15 @@ import static io.vavr.Predicates.*;
 import static io.vavr.Patterns.*;
 import static junit.framework.TestCase.assertEquals;
 import io.vavr.PartialFunction;
+import org.junit.experimental.theories.suppliers.TestedOn;
+
 import java.util.ArrayList;
 import java.util.stream.Stream;
 
 import java.util.List;
 import java.util.function.Consumer;
 import static io.vavr.control.Try.failure;
+import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertTrue;
 
 public class TrySuite {
@@ -33,8 +37,12 @@ public class TrySuite {
                 Success(3),
                 myTrySuccess);
 
+        assertNotEquals(3,myTrySuccess);
+
         assertTrue("failed - the values is a Failure",
                 myTryFailure.isFailure());
+
+
     }
 
     private String patternMyTry(Try<Integer> myTry) {
@@ -117,6 +125,23 @@ public class TrySuite {
                 "5 example of text",
                 transform);
     }
+
+    @Test
+    public void testSuccessTransform2() {
+        Try<Integer> number = Try.of(() -> 5);
+        Try<Integer> transform = number.transform(self -> self);
+
+        assertEquals(Success(5), transform);
+    }
+
+    @Test
+    public void testingMap(){
+        Try<Integer> cadena = Try.of(() -> "Alejandra")
+                .map(s -> s.length());
+
+        assertEquals(Success(9),cadena);
+    }
+
 
     /**
      * La funcionalidad transform va a generar error sobre un try con error.
@@ -323,6 +348,7 @@ public class TrySuite {
      */
     @Test
     public void testTryAndRecoverWith() {
+
         Try<Integer> aTry = Try.of(() -> 2/0).recoverWith(ArithmeticException.class,Try.of(() ->  2));
         Try<Integer> aTry2 = Try.of(() -> 2/0).recoverWith(ArithmeticException.class,Try.of(() ->  2/0));
         assertEquals("Does not recover of 2/0", Try.of(() -> 2), aTry);
@@ -330,6 +356,68 @@ public class TrySuite {
                 Try.failure(new ArithmeticException("/ by zero")).toString() ,
                 aTry2.toString());
     }
+
+    private Try<Integer> sumar(Integer a, Integer b){
+        return Try.of(()->a+b);
+    }
+
+    private Try<Integer> dividir(Integer a, Integer b){
+        return Try.of(()->a/b);
+    }
+
+    @Test
+    public void monadicCompositionWithFlatMap(){
+        Try<Integer> res = sumar(1, 2)
+            .flatMap(r0->sumar(r0,r0)
+                .flatMap(r1 -> sumar(r1,-6)
+                    .flatMap(r2 -> dividir(r2,r2)
+                )));
+
+        assertTrue(res.isFailure());
+
+    }
+
+    @Test
+    public void monadicCompositionWithFor(){
+        Try<Integer> res =
+                For(sumar(1,2),r0 ->
+                For(sumar(r0,r0),r1 ->
+                For(sumar(r1,-6), r2 -> dividir(r2,r2)))).toTry();
+
+        assertTrue(res.isFailure());
+    }
+
+    @Test
+    public void monadicCompositionWithFlatMap2(){
+        Try<Integer> res = sumar(1, 2)
+                .flatMap(r0->sumar(r0,r0)
+                        .flatMap(r1 -> sumar(r1,-6)
+                                .flatMap(r2 -> dividir(r2,r2).recover(ArithmeticException.class, e ->1)
+                                )));
+
+        assertTrue(res.isSuccess());
+        assertEquals(res,Success(1));
+    }
+
+
+    private Try<Integer> dividirConRecuperacion(Integer a, Integer b){
+        return Try.of(()->a/b)
+                .recoverWith(ArithmeticException.class, Try.of(()->b+1));
+
+    }
+    @Test
+    public void monadicCompositionWithFlatMapRecoverWith(){
+        Try<Integer> res = sumar(1, 2)
+                .flatMap(r0->sumar(r0,r0)
+                        .flatMap(r1 -> sumar(r1,-6)
+                                .flatMap(r2 -> dividirConRecuperacion(r2,r2))
+                                ));
+
+        assertTrue(res.isSuccess());
+        assertEquals(res,Success(1));
+    }
+
+
     /**
      *  El Recover retorna el valor a recuperar, pero sin Try, permitiendo que lance un Exception
      *  si, falla
@@ -341,6 +429,7 @@ public class TrySuite {
     /**
      *  Uso de MapTry
      */
+
     @Test
     public void testTryWithMapTry() {
         CheckedFunction1<Integer,Integer> checkedFunction1 = (CheckedFunction1<Integer, Integer>) s -> {
@@ -356,5 +445,18 @@ public class TrySuite {
         Try<Integer> aTry = Try.of(() -> 2).mapTry(checkedFunction1);
         assertEquals("Failed the checkedFuntion", Success(1),aTry);
     }
+
+
+
+/*
+    @Test
+    public void FacturaRecoverWith(){
+        Try<Double> res = Factura.calcularSubTotal("cuaderno,10000;lapiz,2000")
+                .flatMap(r0->Factura.calcularDescuentos(r0,70).recoverWith(Exception.class,Try.of(()->))
+                        .flatMap(r1 -> Factura.calcularRetencion(r1,19)
+                        ));
+        assertEquals(res,Success(4284.0));
+    }*/
+
 
 }
