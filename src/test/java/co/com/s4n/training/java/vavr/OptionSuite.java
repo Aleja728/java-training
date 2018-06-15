@@ -243,6 +243,7 @@ public class OptionSuite {
                 For(Factura.calcularSubTotal("cuaderno,10000;lapiz,2000"), a ->
                         For(Factura.calcularDescuentos(a,20), b -> Factura.calcularRetencion(b,19))).toOption();
 
+
        assertEquals(Some(7776.0),7766.0);
     }
 }
