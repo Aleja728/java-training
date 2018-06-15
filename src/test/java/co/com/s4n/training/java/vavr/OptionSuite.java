@@ -234,6 +234,7 @@ public class OptionSuite {
                         ));
 
         assertEquals(Some(7776.0),valorTotal);
+        //assertEquals(valorTotal.getOrElse(7776.0).doubleValue(),7776.0);
     }
 
     @Test
