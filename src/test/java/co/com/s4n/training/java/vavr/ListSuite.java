@@ -100,7 +100,6 @@ public class ListSuite {
 
     }
 
-
     /**
      * Se revisa el comportamiento cuando se pasa un iterador vacío
      */
