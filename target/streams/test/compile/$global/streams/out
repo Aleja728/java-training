@@ -1,8 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/home/s4n/Desktop/java-training/src/test/java/co/com/s4n/training/java/jdk/CompletableFutureSuite.java:353:1: cannot find symbol[0m
-[0m[[0m[31merror[0m] [0m[0m  symbol:   method print(java.lang.String)[0m
-[0m[[0m[31merror[0m] [0m[0m  location: class co.com.s4n.training.java.jdk.CompletableFutureSuite[0m
-[0m[[0m[31merror[0m] [0m[0m            print("t11 Ejecutando a");[0m
-[0m[[0m[31merror[0m] [0m[0m/home/s4n/Desktop/java-training/src/test/java/co/com/s4n/training/java/jdk/CompletableFutureSuite.java:357:1: cannot find symbol[0m
-[0m[[0m[31merror[0m] [0m[0m  symbol:   method print(java.lang.String)[0m
-[0m[[0m[31merror[0m] [0m[0m  location: class co.com.s4n.training.java.jdk.CompletableFutureSuite[0m
-[0m[[0m[31merror[0m] [0m[0m            print("t11 Ejecutando b");[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/s4n/Desktop/java-training/src/test/java/co/com/s4n/training/java/vavr/OptionSuite.java:3:1: com.sun.org.apache.bcel.internal.generic.FieldOrMethod is internal proprietary API and may be removed in a future release[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport com.sun.org.apache.bcel.internal.generic.FieldOrMethod;[0m
+[0m[[0m[0minfo[0m] [0m[0m/home/s4n/Desktop/java-training/src/test/java/co/com/s4n/training/java/vavr/OptionSuite.java: /home/s4n/Desktop/java-training/src/test/java/co/com/s4n/training/java/vavr/OptionSuite.java uses unchecked or unsafe operations.[0m
+[0m[[0m[0minfo[0m] [0m[0m/home/s4n/Desktop/java-training/src/test/java/co/com/s4n/training/java/vavr/OptionSuite.java: Recompile with -Xlint:unchecked for details.[0m

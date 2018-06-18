@@ -1,6 +1,6 @@
 package co.com.s4n.training.java.vavr;
 
-import co.com.s4n.training.java.Factura;
+import com.sun.org.apache.bcel.internal.generic.FieldOrMethod;
 import org.junit.Test;
 
 
@@ -25,6 +25,74 @@ import static org.junit.Assert.assertTrue;
 
 public class OptionSuite {
 
+
+    @Test
+    public void testConstruction1(){
+        Option<Integer> o =Option(1);
+        assertTrue(o.isDefined());
+        assertEquals(o,Some(1));
+    }
+
+    @Test
+    public void testConstruction2(){
+        Option<Integer> o =Option(null);
+        assertEquals(o,Option.none());
+    }
+
+    private Boolean esParPosibleNull(int i){
+
+        if(i%2 ==0){
+            return new Boolean(true);
+        }else{
+            return null;
+        }
+    }
+
+    private Integer identidadPosibleNull(int i){
+
+        if(i%2 ==0){
+            return new Integer(i);
+        }else{
+            return null;
+        }
+    }
+
+    @Test
+    public void testConstruction3(){
+        Option<Boolean> b = Option(esParPosibleNull(1));
+        assertEquals(b,Option.none());
+    }
+
+    @Test
+    public void testFilter(){
+        Option<Integer> b = Option(identidadPosibleNull(2));
+        Option<Integer> r = b.filter(x-> x.intValue()<4);
+        assertEquals(r.getOrElse(666).intValue(),2);
+    }
+
+    @Test
+    public void testFilterNone(){
+        Option<Integer> b = Option(identidadPosibleNull(1));
+        Option<Integer> r = b.filter(x-> x.intValue()<4);
+        assertEquals(r,Option.none());
+    }
+
+
+    @Test
+    public void mapInOption(){
+        Option<Integer> b = Option(identidadPosibleNull(8));
+        Option<Integer> b1 = b.map(x->x-8);
+
+        assertEquals(b1,Some(0));
+    }
+
+    @Test
+    public void mapInOptionNone(){
+        Option<Integer> b = Option(identidadPosibleNull(3));
+        Option<Integer> b1 = b.map(x->x-8);
+
+        assertEquals(b1, Option.none());
+    }
 
     /**
      * Un option se puede filtar, y mostrar un some() o un none si no encuentra el resultado
@@ -225,26 +293,48 @@ public class OptionSuite {
         assertEquals(integers,Some(6));
     }
 
-    @Test
-    public void FacturaFlatMap1(){
-        Option<Double> valorTotal =
-                Factura.calcularSubTotal("cuaderno,10000;lapiz,2000")
-                        .flatMap(a -> Factura.calcularDescuentos(a,20)
-                                .flatMap(b -> Factura.calcularRetencion(b,19)
-                        ));
+    private Option<Integer> sumar(int a, int b){
+        System.out.println("sumando " +a+ " + "+b);
+        return Option.of(a+b);
+    }
 
-        assertEquals(Some(7776.0),valorTotal);
-        //assertEquals(valorTotal.getOrElse(7776.0).doubleValue(),7776.0);
+    private Option<Integer> restar(int a, int b){
+        System.out.println("restando " + a +"- "+b);
+        return a-b>0 ? Option.of(a-b) : None();
     }
 
     @Test
-    public void FacturaFlapMap2(){
+    public void flatMapInOption1(){
+        Option<Integer> op =
+                sumar(1,1)
+                .flatMap(a -> sumar(a,1)
+                        .flatMap(b -> restar(b,4))
+                            .flatMap(c -> sumar(c,1)
+                                .flatMap(d -> sumar(d,1)
 
-        Option<Double> valorTotal =
-                For(Factura.calcularSubTotal("cuaderno,10000;lapiz,2000"), a ->
-                        For(Factura.calcularDescuentos(a,20), b -> Factura.calcularRetencion(b,19))).toOption();
+            )));
 
+        assertEquals(op,None());
+        assertEquals(op.getOrElse(666).intValue(),666);
+    }
 
-       assertEquals(Some(7776.0),7766.0);
+    @Test
+    public void flatMapInOptionconFor(){
+
+        Option<Integer> resultado =
+                For(sumar(1,1), r1 ->
+                For(sumar(r1,1), r2 ->
+                For(sumar(r2,1), r3 -> sumar(r3,1)))).toOption();
+
+        assertEquals(resultado.getOrElse(666).intValue(),5);
+    }
+
+    @Test
+    public void flatMapInOption(){
+        Option<Integer> o1 = Option.of(1);
+        Option<Option<Integer>> m = o1.map(i -> Option(identidadPosibleNull(i.intValue()-3)));
+        Option<Integer> y = o1
+                .flatMap(i -> Option.of(identidadPosibleNull(i.intValue()-3)));
+
     }
 }

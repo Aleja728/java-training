@@ -2,24 +2,33 @@
 [0m[[0m[0mdebug[0m] [0m[0mInitial source changes: [0m
 [0m[[0m[0mdebug[0m] [0m[0m	removed:Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0m	added: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0m	modified: Set(/home/s4n/Desktop/java-training/src/test/java/co/com/s4n/training/java/jdk/CompletableFutureSuite.java)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	modified: Set(/home/s4n/Desktop/java-training/src/test/java/co/com/s4n/training/java/vavr/OptionSuite.java)[0m
 [0m[[0m[0mdebug[0m] [0m[0mInvalidated products: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0mExternal API changes: API Changes: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0mModified binary dependencies: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial directly invalidated classes: Set(co.com.s4n.training.java.jdk.CompletableFutureSuite.Person, co.com.s4n.training.java.jdk.CompletableFutureSuite)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial directly invalidated classes: Set(co.com.s4n.training.java.vavr.OptionSuite)[0m
 [0m[[0m[0mdebug[0m] [0m[0m[0m
 [0m[[0m[0mdebug[0m] [0m[0mSources indirectly invalidated by:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	product: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0m	binary dep: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0m	external source: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated classes: Set(co.com.s4n.training.java.jdk.CompletableFutureSuite.Person, co.com.s4n.training.java.jdk.CompletableFutureSuite)[0m
-[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated sources:Set(/home/s4n/Desktop/java-training/src/test/java/co/com/s4n/training/java/jdk/CompletableFutureSuite.java)[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated classes: Set(co.com.s4n.training.java.vavr.OptionSuite)[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated sources:Set(/home/s4n/Desktop/java-training/src/test/java/co/com/s4n/training/java/vavr/OptionSuite.java)[0m
 [0m[[0m[0minfo[0m] [0m[0mCompiling 1 Java source to /home/s4n/Desktop/java-training/target/test-classes ...[0m
-[0m[[0m[0mdebug[0m] [0m[0mAttempting to call com.sun.tools.javac.api.JavacTool@234784d1 directly...[0m
-[0m[[0m[0mdebug[0m] [0m[0mJava compilation took 0.069468132 s[0m
-[0m[[0m[0mdebug[0m] [0m[0mJava analysis took 0.009871498 s[0m
-[0m[[0m[0mdebug[0m] [0m[0mJava compilation + analysis took 0.079963878 s[0m
+[0m[[0m[0mdebug[0m] [0m[0mAttempting to call com.sun.tools.javac.api.JavacTool@486b770b directly...[0m
+[0m[[0m[0mdebug[0m] [0m[0mJava compilation took 1.114800658 s[0m
+[0m[[0m[0mdebug[0m] [0m[0mJava analysis took 0.109806124 s[0m
+[0m[[0m[0mdebug[0m] [0m[0mJava compilation + analysis took 1.229428567 s[0m
 [0m[[0m[0minfo[0m] [0m[0mDone compiling.[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidating (transitively) by inheritance from co.com.s4n.training.java.vavr.OptionSuite...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: Set(co.com.s4n.training.java.vavr.OptionSuite)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidated by transitive inheritance dependency: Set(co.com.s4n.training.java.vavr.OptionSuite)[0m
+[0m[[0m[0mdebug[0m] [0m[0mChange NamesChange(co.com.s4n.training.java.vavr.OptionSuite,ModifiedNames(changes = UsedName(flatMapInOptionconFor,[Default]))) invalidates 1 classes due to The co.com.s4n.training.java.vavr.OptionSuite has the following regular definitions changed:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UsedName(flatMapInOptionconFor,[Default]).[0m
+[0m[[0m[0mdebug[0m] [0m[0m	> by transitive inheritance: Set(co.com.s4n.training.java.vavr.OptionSuite)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	> [0m
+[0m[[0m[0mdebug[0m] [0m[0m	> [0m
+[0m[[0m[0mdebug[0m] [0m[0m        [0m
 [0m[[0m[0mdebug[0m] [0m[0mNew invalidations:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: Set()[0m

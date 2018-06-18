@@ -4,7 +4,7 @@
 		module="s4n-java-training$sources"
 		revision="0.1.0-SNAPSHOT"
 		status="integration"
-		publication="20180614080102"
+		publication="20180615073725"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>
