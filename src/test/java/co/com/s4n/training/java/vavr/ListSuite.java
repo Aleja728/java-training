@@ -19,12 +19,12 @@ public class ListSuite {
 
     /**
      * Lo que sucede cuando se intenta crear un lista de null
-     */
+     *//*
     @Test(expected = NullPointerException.class)
     public void testListOfNull() {
         List<String> list1 = List.of(null);
         list1.get();
-    }
+    }/*
 
     /**
      * Lo que sucede cuando se crea una lista vacía y se llama un método

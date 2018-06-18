@@ -1,0 +1,12 @@
+testOnly co.com.s4n.trainig.java.vavr.OptionSuite
+exit
+testOnly co.com.s4n.trainig.java.vavr.OptionSuite
+exit
+testOnly co.com.s4n.trainig.java.vavr.OptionSuite
+exit
+testOnly co.com.s4n.trainig.java.vavr.OptionSuite
+testOnly co.com.s4n.trainig.java.vavr.OptionSuite -Xlint
+testOnly co.com.s4n.trainig.java.vavr.OptionSuite
+exit
+testOnly co.com.s4n.trainig.java.vavr.OptionSuite
+exit
