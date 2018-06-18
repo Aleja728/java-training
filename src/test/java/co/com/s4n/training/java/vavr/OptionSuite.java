@@ -1,6 +1,10 @@
 package co.com.s4n.training.java.vavr;
 
+<<<<<<< HEAD
 import com.sun.org.apache.bcel.internal.generic.FieldOrMethod;
+=======
+import co.com.s4n.training.java.Factura;
+>>>>>>> develop
 import org.junit.Test;
 
 
@@ -293,6 +297,7 @@ public class OptionSuite {
         assertEquals(integers,Some(6));
     }
 
+<<<<<<< HEAD
     private Option<Integer> sumar(int a, int b){
         System.out.println("sumando " +a+ " + "+b);
         return Option.of(a+b);
@@ -336,5 +341,28 @@ public class OptionSuite {
         Option<Integer> y = o1
                 .flatMap(i -> Option.of(identidadPosibleNull(i.intValue()-3)));
 
+=======
+    @Test
+    public void FacturaFlatMap1(){
+        Option<Double> valorTotal =
+                Factura.calcularSubTotal("cuaderno,10000;lapiz,2000")
+                        .flatMap(a -> Factura.calcularDescuentos(a,20)
+                                .flatMap(b -> Factura.calcularRetencion(b,19)
+                        ));
+
+        assertEquals(Some(7776.0),valorTotal);
+        //assertEquals(valorTotal.getOrElse(7776.0).doubleValue(),7776.0);
+    }
+
+    @Test
+    public void FacturaFlapMap2(){
+
+        Option<Double> valorTotal =
+                For(Factura.calcularSubTotal("cuaderno,10000;lapiz,2000"), a ->
+                        For(Factura.calcularDescuentos(a,20), b -> Factura.calcularRetencion(b,19))).toOption();
+
+
+       assertEquals(Some(7776.0),7766.0);
+>>>>>>> develop
     }
 }
