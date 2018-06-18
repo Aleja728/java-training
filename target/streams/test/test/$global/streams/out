@@ -1,0 +1,25 @@
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(co.com.s4n.training.java.vavr.FunctionSuite, com.novocode.junit.JUnitFingerprint@2944cbe, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(co.com.s4n.training.java.vavr.OptionSuite, com.novocode.junit.JUnitFingerprint@2944cbe, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(co.com.s4n.training.java.vavr.EitherSuite, com.novocode.junit.JUnitFingerprint@2944cbe, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(co.com.s4n.training.java.jdk.LambdaSuite, com.novocode.junit.JUnitFingerprint@2944cbe, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(co.com.s4n.training.java.vavr.TrySuite, com.novocode.junit.JUnitFingerprint@2944cbe, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(co.com.s4n.training.java.vavr.FutureSuite, com.novocode.junit.JUnitFingerprint@2944cbe, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(co.com.s4n.training.java.vavr.ValidationSuite, com.novocode.junit.JUnitFingerprint@2944cbe, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(co.com.s4n.training.java.vavr.ListSuite, com.novocode.junit.JUnitFingerprint@2944cbe, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(co.com.s4n.training.java.jdk.CompletableFutureSuite, com.novocode.junit.JUnitFingerprint@2944cbe, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(co.com.s4n.training.java.jdk.StreamsSuite, com.novocode.junit.JUnitFingerprint@2944cbe, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mSummary for JUnit not available.[0m
+[0m[[0m[31merror[0m] [0m[0mFailed: Total 154, Failed 1, Errors 0, Passed 153[0m
+[0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	co.com.s4n.training.java.vavr.OptionSuite[0m
+[0m[[0m[0mdebug[0m] [0m[0m	co.com.s4n.training.java.vavr.EitherSuite[0m
+[0m[[0m[0mdebug[0m] [0m[0m	co.com.s4n.training.java.jdk.LambdaSuite[0m
+[0m[[0m[0mdebug[0m] [0m[0m	co.com.s4n.training.java.jdk.StreamsSuite[0m
+[0m[[0m[0mdebug[0m] [0m[0m	co.com.s4n.training.java.vavr.ListSuite[0m
+[0m[[0m[0mdebug[0m] [0m[0m	co.com.s4n.training.java.jdk.CompletableFutureSuite[0m
+[0m[[0m[0mdebug[0m] [0m[0m	co.com.s4n.training.java.vavr.TrySuite[0m
+[0m[[0m[0mdebug[0m] [0m[0m	co.com.s4n.training.java.vavr.ValidationSuite[0m
+[0m[[0m[0mdebug[0m] [0m[0m	co.com.s4n.training.java.vavr.FunctionSuite[0m
+[0m[[0m[31merror[0m] [0m[0mFailed tests:[0m
+[0m[[0m[31merror[0m] [0m[0m	co.com.s4n.training.java.vavr.FutureSuite[0m
+[0m[[0m[31merror[0m] [0m[0m(Test / [31mtest[0m) sbt.TestsFailedException: Tests unsuccessful[0m

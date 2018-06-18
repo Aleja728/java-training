@@ -1,0 +1,50 @@
+[0m[[0m[0mdebug[0m] [0m[0m[34mTest run started[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mStreamsSuite[0m.[36msmokeTest[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mStreamsSuite[0m.[36msmokeTest[0m finished, took 0.001 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mStreamsSuite[0m.[36mtestStream11[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mStreamsSuite[0m.[36mtestStream11[0m finished, took 0.014 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mStreamsSuite[0m.[36mtestStreams1[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mStreamsSuite[0m.[36mtestStreams1[0m finished, took 0.013 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mStreamsSuite[0m.[36mtestStreams2[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mStreamsSuite[0m.[36mtestStreams2[0m finished, took 0.009 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mStreamsSuite[0m.[36mtestStreams3[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mStreamsSuite[0m.[36mtestStreams3[0m finished, took 0.002 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mStreamsSuite[0m.[36mtestStreams4[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mStreamsSuite[0m.[36mtestStreams4[0m finished, took 0.003 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mStreamsSuite[0m.[36mtestStreams6[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mStreamsSuite[0m.[36mtestStreams6[0m finished, took 0.002 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mStreamsSuite[0m.[36mtestStreams7[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mStreamsSuite[0m.[36mtestStreams7[0m finished, took 0.002 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mStreamsSuite[0m.[36mtestStreams8[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mStreamsSuite[0m.[36mtestStreams8[0m finished, took 0.001 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mStreamsSuite[0m.[36mtestStreams9[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mStreamsSuite[0m.[36mtestStreams9[0m finished, took 0.001 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mStreamsSuite[0m.[36mcollectingPersons[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mStreamsSuite[0m.[36mcollectingPersons[0m finished, took 0.024 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mStreamsSuite[0m.[36mtestStreams10[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mStreamsSuite[0m.[36mtestStreams10[0m finished, took 0.004 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mStreamsSuite[0m.[36mtestStreams12[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mStreamsSuite[0m.[36mtestStreams12[0m finished, took 0.001 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mStreamsSuite[0m.[36mtestStreams13[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mStreamsSuite[0m.[36mtestStreams13[0m finished, took 0.001 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mStreamsSuite[0m.[36mtestStreams14[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mStreamsSuite[0m.[36mtestStreams14[0m finished, took 0.009 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mStreamsSuite[0m.[36mtestStreams15[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mStreamsSuite[0m.[36mtestStreams15[0m finished, took 0.001 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mStreamsSuite[0m.[36mtestStreams16[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mStreamsSuite[0m.[36mtestStreams16[0m finished, took 0.001 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mStreamsSuite[0m.[36mtestStreams17[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mStreamsSuite[0m.[36mtestStreams17[0m finished, took 0.001 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mStreamsSuite[0m.[36mtestStreams18[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mStreamsSuite[0m.[36mtestStreams18[0m finished, took 0.002 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mStreamsSuite[0m.[36mtestStreams19[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mStreamsSuite[0m.[36mtestStreams19[0m finished, took 0.002 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mStreamsSuite[0m.[36mtestStreams20[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mStreamsSuite[0m.[36mtestStreams20[0m finished, took 0.001 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mStreamsSuite[0m.[36mstramsContienenObjetos[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mStreamsSuite[0m.[36mstramsContienenObjetos[0m finished, took 0.001 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mStreamsSuite[0m.[36mstramsContienenObjetos2[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mStreamsSuite[0m.[36mstramsContienenObjetos2[0m finished, took 0.001 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mStreamsSuite[0m.[36mstramsContienenObjetos3[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mStreamsSuite[0m.[36mstramsContienenObjetos3[0m finished, took 0.001 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0m[34mTest run finished: [0m[34m0 failed[0m[34m, [0m[34m0 ignored[0m[34m, 24 total, 0.132s[0m[0m
