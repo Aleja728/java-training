@@ -1,0 +1,44 @@
+[0m[[0m[0mdebug[0m] [0m[0m[34mTest run started[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mTrySuite[0m.[36mtestSuccessPeek[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mTrySuite[0m.[36mtestSuccessPeek[0m finished, took 0.011 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mTrySuite[0m.[36mtestSuccessAndThen[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mTrySuite[0m.[36mtestSuccessAndThen[0m finished, took 0.002 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mTrySuite[0m.[36mtestFilterToTry[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mTrySuite[0m.[36mtestFilterToTry[0m finished, took 0.002 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mTrySuite[0m.[36mtestMapToTryFailure[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mTrySuite[0m.[36mtestMapToTryFailure[0m finished, took 0.001 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mTrySuite[0m.[36mtestTryWithResources[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mTrySuite[0m.[36mtestTryWithResources[0m finished, took 0.015 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mTrySuite[0m.[36mtestFlatMap[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mTrySuite[0m.[36mtestFlatMap[0m finished, took 0.002 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mTrySuite[0m.[36mtestAndThenTry[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mTrySuite[0m.[36mtestAndThenTry[0m finished, took 0.013 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mTrySuite[0m.[36mtestTryToRecover[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mTrySuite[0m.[36mtestTryToRecover[0m finished, took 0.019 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mTrySuite[0m.[36mtestTryToPatternMatching[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mTrySuite[0m.[36mtestTryToPatternMatching[0m finished, took 0.001 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mTrySuite[0m.[36mtestFailTransformWhen[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mTrySuite[0m.[36mtestFailTransformWhen[0m finished, took 0.011 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mTrySuite[0m.[36mtestSuccessTransform[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mTrySuite[0m.[36mtestSuccessTransform[0m finished, took 0.003 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mTrySuite[0m.[36mtestFilterTryToTry[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mTrySuite[0m.[36mtestFilterTryToTry[0m finished, took 0.003 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mTrySuite[0m.[36mtestCollect[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mTrySuite[0m.[36mtestCollect[0m finished, took 0.012 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mTrySuite[0m.[36mtestFlatMapOnSuccess[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mTrySuite[0m.[36mtestFlatMapOnSuccess[0m finished, took 0.007 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mTrySuite[0m.[36mtestErrorPeek[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mTrySuite[0m.[36mtestErrorPeek[0m finished, took 0.001 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mTrySuite[0m.[36mtestAndThenWithChecked[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mTrySuite[0m.[36mtestAndThenWithChecked[0m finished, took 0.002 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mTrySuite[0m.[36mtestTryWithMapTry[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mTrySuite[0m.[36mtestTryWithMapTry[0m finished, took 0.007 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mTrySuite[0m.[36mtestTryAndRecover[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mTrySuite[0m.[36mtestTryAndRecover[0m finished, took 0.001 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mTrySuite[0m.[36mtestTrytoSuccesAndFailure[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mTrySuite[0m.[36mtestTrytoSuccesAndFailure[0m finished, took 0.001 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mTrySuite[0m.[36mtestTryAndRecoverWith[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mTrySuite[0m.[36mtestTryAndRecoverWith[0m finished, took 0.003 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mTrySuite[0m.[36mtestMapToTrySuccess[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mTrySuite[0m.[36mtestMapToTrySuccess[0m finished, took 0.001 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0m[34mTest run finished: [0m[34m0 failed[0m[34m, [0m[34m0 ignored[0m[34m, 21 total, 0.162s[0m[0m
