@@ -1,0 +1,61 @@
+[0m[[0m[0mdebug[0m] [0m[0m[34mTest run started[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mFutureSuite[0m.[36mtestFuturePatternMatchingError[0m started[0m
+[0m[[0m[31merror[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mFutureSuite[0m.[31mtestFuturePatternMatchingError[0m failed: Failure - The future should be a success expected:<[Failure]!> but was:<[Success]!>, took 0.071 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mFutureSuite[0m.[36mtestFuturePatternMatchingError[0m finished, took 0.082 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mFutureSuite[0m.[36mtestFutureToFind[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mFutureSuite[0m.[36mtestFutureToFind[0m finished, took 0.084 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mFutureSuite[0m.[36mtestFutureFirstCompleteOf[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mFutureSuite[0m.[36mtestFutureFirstCompleteOf[0m finished, took 1.019 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mFutureSuite[0m.[36mtestFailureFallBackToFailure[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mFutureSuite[0m.[36mtestFailureFallBackToFailure[0m finished, took 1.001 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mFutureSuite[0m.[36mtestCancelAfterComplete[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mFutureSuite[0m.[36mtestCancelAfterComplete[0m finished, took 0.001 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mFutureSuite[0m.[36mtestFutureWithSequence[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mFutureSuite[0m.[36mtestFutureWithSequence[0m finished, took 0.012 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mFutureSuite[0m.[36mtestTriggersReturn[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mFutureSuite[0m.[36mtestTriggersReturn[0m finished, took 0.003 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mFutureSuite[0m.[36mtestFutureToMap[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mFutureSuite[0m.[36mtestFutureToMap[0m finished, took 0.003 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mFutureSuite[0m.[36mtestCancelFuture[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mFutureSuite[0m.[36mtestCancelFuture[0m finished, took 0.006 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mFutureSuite[0m.[36mtestFromMethodRef[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mFutureSuite[0m.[36mtestFromMethodRef[0m finished, took 0.003 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mFutureSuite[0m.[36mtestFutureRecover[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mFutureSuite[0m.[36mtestFutureRecover[0m finished, took 1.002 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mFutureSuite[0m.[36mtestFromFailedTry[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mFutureSuite[0m.[36mtestFromFailedTry[0m finished, took 0.001 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mFutureSuite[0m.[36mtestFromJavaFuture[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mFutureSuite[0m.[36mtestFromJavaFuture[0m finished, took 0.001 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mFutureSuite[0m.[36mtestFoldOperation[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mFutureSuite[0m.[36mtestFoldOperation[0m finished, took 0.002 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mFutureSuite[0m.[36mtestSuccessFallBackTo[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mFutureSuite[0m.[36mtestSuccessFallBackTo[0m finished, took 0.001 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mFutureSuite[0m.[36mtestFuturePatternMatchingSuccess[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mFutureSuite[0m.[36mtestFuturePatternMatchingSuccess[0m finished, took 0.0 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mFutureSuite[0m.[36mtestFutureWithError[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mFutureSuite[0m.[36mtestFutureWithError[0m finished, took 0.001 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mFutureSuite[0m.[36mtestFromSuccessTry[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mFutureSuite[0m.[36mtestFromSuccessTry[0m finished, took 0.001 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mFutureSuite[0m.[36mtestFailureFallBackTo[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mFutureSuite[0m.[36mtestFailureFallBackTo[0m finished, took 0.001 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mFutureSuite[0m.[36mtestFutureToOnFails[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mFutureSuite[0m.[36mtestFutureToOnFails[0m finished, took 0.001 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mFutureSuite[0m.[36mtestOnSuccess[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mFutureSuite[0m.[36mtestOnSuccess[0m finished, took 0.001 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mFutureSuite[0m.[36mtestOnCompleteSuccess[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mFutureSuite[0m.[36mtestOnCompleteSuccess[0m finished, took 0.001 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mFutureSuite[0m.[36mtestFutureToForEach[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mFutureSuite[0m.[36mtestFutureToForEach[0m finished, took 0.001 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mFutureSuite[0m.[36mtestComunicateFuturesWithPromise[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mFutureSuite[0m.[36mtestComunicateFuturesWithPromise[0m finished, took 0.0 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mFutureSuite[0m.[36mtestFutureFromPromise[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mFutureSuite[0m.[36mtestFutureFromPromise[0m finished, took 0.0 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mFutureSuite[0m.[36mtestFromLambda[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mFutureSuite[0m.[36mtestFromLambda[0m finished, took 0.001 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mFutureSuite[0m.[36mtestFilter[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mFutureSuite[0m.[36mtestFilter[0m finished, took 0.001 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mFutureSuite[0m.[36mtestFutureToTransform[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mFutureSuite[0m.[36mtestFutureToTransform[0m finished, took 0.001 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mFutureSuite[0m.[36mtestFutureRecoverWith[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.vavr.[33mFutureSuite[0m.[36mtestFutureRecoverWith[0m finished, took 0.002 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0m[34mTest run finished: [0m[31m1 failed[0m[34m, [0m[34m0 ignored[0m[34m, 29 total, 3.247s[0m[0m

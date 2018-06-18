@@ -6,6 +6,7 @@ import co.com.s4n.training.java.*;
 import org.junit.Ignore;
 import org.junit.Test;
 
+import javax.print.DocFlavor;
 import java.util.*;
 import java.util.function.Supplier;
 import java.util.stream.Collector;
@@ -48,6 +49,19 @@ public class StreamsSuite {
     }
 
     @Test
+    public void testStreamsListEmpty(){
+        List<String> list = new ArrayList<>();
+        Optional<String> first = list
+                .stream()
+                .findFirst();
+
+        assertTrue(!first.isPresent());
+        String res = first.orElseGet(()->"NONE");
+        assertEquals("NONE",res);
+
+    }
+
+    @Test
     public void testStreams3(){
         Optional<String> first = Stream.of("a1", "a2", "a3")
                 .findFirst();
@@ -64,7 +78,21 @@ public class StreamsSuite {
         assertEquals(1,first.orElseGet(()->666));
 
     }
+/*
+    @Test
+    public void testStreamsCollect(){
 
+        IntStream resultadoStream1 = IntStream.range(1, 4);
+
+        List<Integer> resultCollect = resultadoStream1.boxed().collect(Collectors.toList());
+
+        assertTrue(resultCollect.size()==3);
+        assertTrue(resultCollect.contains(new Integer(1)));
+        assertTrue(resultCollect.contains(new Integer(2)));
+        assertTrue(resultCollect.contains(new Integer(3)));
+        assertTrue(resultCollect.contains(new Integer(4)));
+
+    }*/
 
     @Test
     public void testStreams6(){
@@ -76,6 +104,27 @@ public class StreamsSuite {
 
     }
 
+   /* @Test
+    public void testStreams7WithCollect(){
+
+        List<String> lista = Arrays.asList("a1", "a2", "a3");
+        List<Integer> lista2 = new ArrayList();
+        Integer suma;
+
+        for(int a=0;a<lista.size();a++){
+            Integer num = Integer.parseInt(lista.get(a).substring(1));
+            suma = suma +num;
+
+        }
+
+
+        Integer promedio = suma/lista2.size();
+        System.out.println(promedio);
+        //assertEquals(5,promedio);
+
+
+    }
+*/
     @Test
     public void testStreams7(){
         OptionalInt max = Stream.of("a1", "a2", "a3")
@@ -197,6 +246,7 @@ public class StreamsSuite {
                     return s.toUpperCase();
                 })
                 .anyMatch(s -> {
+                    System.out.println("Pasan: "+s);
                     return s.startsWith("A");
                 });
 
@@ -221,8 +271,17 @@ public class StreamsSuite {
 
     @Test
     public void testStreams13() {
-        //TODO: cambia el orden de map y filter
-        assertTrue(true);
+        List<String> collect = Stream.of("d2", "a2", "b1", "b3", "c")
+                .filter(s -> {
+                    return s.startsWith("A");
+                })
+                .map(s -> {
+                    return s.toUpperCase();
+                }).collect(Collectors.toList());
+
+
+        assertTrue(collect.size()==0);
+        //assertTrue(collect.contains("A2"));
     }
 
     @Test(expected = java.lang.IllegalStateException.class)
@@ -301,6 +360,8 @@ public class StreamsSuite {
                         .collect(Collectors.toList());
 
         assertTrue(filtered.size()==2);
+        assertTrue(filtered.get(0).name.contains("Peter"));
+        assertTrue(filtered.get(1).name.contains("Pamela"));
 
     }
 

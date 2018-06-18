@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuite hostname="s4n-ThinkPad-E470" name="co.com.s4n.training.java.vavr.FutureSuite" tests="29" errors="0" failures="1" skipped="0" time="3.222">
+                     <properties>
+      <property name="jline.esc.timeout" value="0"/><property name="jna.platform.library.path" value="/usr/lib/x86_64-linux-gnu:/lib/x86_64-linux-gnu:/lib64:/usr/lib:/lib:/usr/lib/x86_64-linux-gnu/mesa-egl:/usr/lib/x86_64-linux-gnu/mesa"/><property name="java.runtime.name" value="OpenJDK Runtime Environment"/><property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/><property name="java.vm.version" value="25.171-b11"/><property name="java.vm.vendor" value="Oracle Corporation"/><property name="java.vendor.url" value="http://java.oracle.com/"/><property name="path.separator" value=":"/><property name="jna.loaded" value="true"/><property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/><property name="file.encoding.pkg" value="sun.io"/><property name="user.country" value="US"/><property name="sun.java.launcher" value="SUN_STANDARD"/><property name="sun.os.patch.level" value="unknown"/><property name="jna.nosys" value="true"/><property name="java.vm.specification.name" value="Java Virtual Machine Specification"/><property name="user.dir" value="/home/s4n/Desktop/java-training"/><property name="java.runtime.version" value="1.8.0_171-8u171-b11-0ubuntu0.17.10.1-b11"/><property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/><property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/><property name="os.arch" value="amd64"/><property name="java.io.tmpdir" value="/tmp"/><property name="line.separator" value="
+"/><property name="java.vm.specification.vendor" value="Oracle Corporation"/><property name="os.name" value="Linux"/><property name="sun.jnu.encoding" value="UTF-8"/><property name="jnidispatch.path" value="/tmp/jna-112237/jna7018285716518852097.tmp"/><property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/><property name="java.specification.name" value="Java Platform API Specification"/><property name="java.class.version" value="52.0"/><property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/><property name="os.version" value="4.13.0-21-generic"/><property name="user.home" value="/home/s4n"/><property name="user.timezone" value="America/Bogota"/><property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/><property name="file.encoding" value="UTF-8"/><property name="java.specification.version" value="1.8"/><property name="java.class.path" value="/usr/share/sbt/bin/sbt-launch.jar"/><property name="user.name" value="s4n"/><property name="jline.shutdownhook" value="false"/><property name="java.vm.specification.version" value="1.8"/><property name="sun.java.command" value="/usr/share/sbt/bin/sbt-launch.jar"/><property name="java.home" value="/usr/lib/jvm/java-8-openjdk-amd64/jre"/><property name="sun.arch.data.model" value="64"/><property name="user.language" value="en"/><property name="java.specification.vendor" value="Oracle Corporation"/><property name="awt.toolkit" value="sun.awt.X11.XToolkit"/><property name="java.vm.info" value="mixed mode"/><property name="java.version" value="1.8.0_171"/><property name="java.ext.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext"/><property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes"/><property name="java.vendor" value="Oracle Corporation"/><property name="file.separator" value="/"/><property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/><property name="sun.io.unicode.encoding" value="UnicodeLittle"/><property name="sun.cpu.endian" value="little"/><property name="sun.desktop" value="gnome"/><property name="sun.cpu.isalist" value=""/>
+    </properties>
+                     <testcase classname="co.com.s4n.training.java.vavr.FutureSuite" name="testFuturePatternMatchingError" time="0.071">
+                                                 <failure message="Failure - The future should be a success expected:&lt;[Failure]!&gt; but was:&lt;[Success]!&gt;" type="junit.framework.ComparisonFailure">junit.framework.ComparisonFailure: Failure - The future should be a success expected:&lt;[Failure]!&gt; but was:&lt;[Success]!&gt;
+	at junit.framework.Assert.assertEquals(Assert.java:100)
+	at junit.framework.TestCase.assertEquals(TestCase.java:261)
+	at co.com.s4n.training.java.vavr.FutureSuite.testFuturePatternMatchingError(FutureSuite.java:433)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at com.novocode.junit.JUnitRunner$1.execute(JUnitRunner.java:132)
+	at sbt.TestRunner.runTest$1(TestFramework.scala:106)
+	at sbt.TestRunner.run(TestFramework.scala:117)
+	at sbt.TestFramework$$anon$2$$anonfun$$lessinit$greater$1.$anonfun$apply$1(TestFramework.scala:262)
+	at sbt.TestFramework$.sbt$TestFramework$$withContextLoader(TestFramework.scala:233)
+	at sbt.TestFramework$$anon$2$$anonfun$$lessinit$greater$1.apply(TestFramework.scala:262)
+	at sbt.TestFramework$$anon$2$$anonfun$$lessinit$greater$1.apply(TestFramework.scala:262)
+	at sbt.TestFunction.apply(TestFramework.scala:271)
+	at sbt.Tests$.$anonfun$toTask$1(Tests.scala:281)
+	at sbt.std.Transform$$anon$3.$anonfun$apply$2(System.scala:46)
+	at sbt.std.Transform$$anon$4.work(System.scala:66)
+	at sbt.Execute.$anonfun$submit$2(Execute.scala:263)
+	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:16)
+	at sbt.Execute.work(Execute.scala:272)
+	at sbt.Execute.$anonfun$submit$1(Execute.scala:263)
+	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:174)
+	at sbt.CompletionService$$anon$2.call(CompletionService.scala:37)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</failure>
+                                               </testcase><testcase classname="co.com.s4n.training.java.vavr.FutureSuite" name="testFutureToFind" time="0.084">
+                                                 
+                                               </testcase><testcase classname="co.com.s4n.training.java.vavr.FutureSuite" name="testFutureFirstCompleteOf" time="1.019">
+                                                 
+                                               </testcase><testcase classname="co.com.s4n.training.java.vavr.FutureSuite" name="testFailureFallBackToFailure" time="1.001">
+                                                 
+                                               </testcase><testcase classname="co.com.s4n.training.java.vavr.FutureSuite" name="testCancelAfterComplete" time="0.001">
+                                                 
+                                               </testcase><testcase classname="co.com.s4n.training.java.vavr.FutureSuite" name="testFutureWithSequence" time="0.012">
+                                                 
+                                               </testcase><testcase classname="co.com.s4n.training.java.vavr.FutureSuite" name="testTriggersReturn" time="0.003">
+                                                 
+                                               </testcase><testcase classname="co.com.s4n.training.java.vavr.FutureSuite" name="testFutureToMap" time="0.003">
+                                                 
+                                               </testcase><testcase classname="co.com.s4n.training.java.vavr.FutureSuite" name="testCancelFuture" time="0.006">
+                                                 
+                                               </testcase><testcase classname="co.com.s4n.training.java.vavr.FutureSuite" name="testFromMethodRef" time="0.003">
+                                                 
+                                               </testcase><testcase classname="co.com.s4n.training.java.vavr.FutureSuite" name="testFutureRecover" time="1.002">
+                                                 
+                                               </testcase><testcase classname="co.com.s4n.training.java.vavr.FutureSuite" name="testFromFailedTry" time="0.001">
+                                                 
+                                               </testcase><testcase classname="co.com.s4n.training.java.vavr.FutureSuite" name="testFromJavaFuture" time="0.001">
+                                                 
+                                               </testcase><testcase classname="co.com.s4n.training.java.vavr.FutureSuite" name="testFoldOperation" time="0.002">
+                                                 
+                                               </testcase><testcase classname="co.com.s4n.training.java.vavr.FutureSuite" name="testSuccessFallBackTo" time="0.001">
+                                                 
+                                               </testcase><testcase classname="co.com.s4n.training.java.vavr.FutureSuite" name="testFuturePatternMatchingSuccess" time="0.0">
+                                                 
+                                               </testcase><testcase classname="co.com.s4n.training.java.vavr.FutureSuite" name="testFutureWithError" time="0.001">
+                                                 
+                                               </testcase><testcase classname="co.com.s4n.training.java.vavr.FutureSuite" name="testFromSuccessTry" time="0.001">
+                                                 
+                                               </testcase><testcase classname="co.com.s4n.training.java.vavr.FutureSuite" name="testFailureFallBackTo" time="0.001">
+                                                 
+                                               </testcase><testcase classname="co.com.s4n.training.java.vavr.FutureSuite" name="testFutureToOnFails" time="0.001">
+                                                 
+                                               </testcase><testcase classname="co.com.s4n.training.java.vavr.FutureSuite" name="testOnSuccess" time="0.001">
+                                                 
+                                               </testcase><testcase classname="co.com.s4n.training.java.vavr.FutureSuite" name="testOnCompleteSuccess" time="0.001">
+                                                 
+                                               </testcase><testcase classname="co.com.s4n.training.java.vavr.FutureSuite" name="testFutureToForEach" time="0.001">
+                                                 
+                                               </testcase><testcase classname="co.com.s4n.training.java.vavr.FutureSuite" name="testComunicateFuturesWithPromise" time="0.0">
+                                                 
+                                               </testcase><testcase classname="co.com.s4n.training.java.vavr.FutureSuite" name="testFutureFromPromise" time="0.0">
+                                                 
+                                               </testcase><testcase classname="co.com.s4n.training.java.vavr.FutureSuite" name="testFromLambda" time="0.001">
+                                                 
+                                               </testcase><testcase classname="co.com.s4n.training.java.vavr.FutureSuite" name="testFilter" time="0.001">
+                                                 
+                                               </testcase><testcase classname="co.com.s4n.training.java.vavr.FutureSuite" name="testFutureToTransform" time="0.001">
+                                                 
+                                               </testcase><testcase classname="co.com.s4n.training.java.vavr.FutureSuite" name="testFutureRecoverWith" time="0.002">
+                                                 
+                                               </testcase>
+                     <system-out><![CDATA[]]></system-out>
+                     <system-err><![CDATA[]]></system-err>
+                   </testsuite>
