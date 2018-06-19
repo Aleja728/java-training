@@ -2,23 +2,23 @@
 [0m[[0m[0mdebug[0m] [0m[0mInitial source changes: [0m
 [0m[[0m[0mdebug[0m] [0m[0m	removed:Set(/home/s4n/Desktop/java-training/src/test/java/co/com/s4n/training/java/vavr/FacturaTry.java)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	added: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0m	modified: Set(/home/s4n/Desktop/java-training/src/test/java/co/com/s4n/training/java/vavr/ValidationSuite.java)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	modified: Set(/home/s4n/Desktop/java-training/src/test/java/co/com/s4n/training/java/vavr/FacturaTryRecover.java)[0m
 [0m[[0m[0mdebug[0m] [0m[0mInvalidated products: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0mExternal API changes: API Changes: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0mModified binary dependencies: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial directly invalidated classes: Set(co.com.s4n.training.java.vavr.ValidationSuite.MyClass, co.com.s4n.training.java.vavr.ValidationSuite, co.com.s4n.training.java.vavr.ValidationSuite.TestValidation)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial directly invalidated classes: Set(co.com.s4n.training.java.vavr.FacturaTryRecover)[0m
 [0m[[0m[0mdebug[0m] [0m[0m[0m
 [0m[[0m[0mdebug[0m] [0m[0mSources indirectly invalidated by:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	product: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0m	binary dep: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0m	external source: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated classes: Set(co.com.s4n.training.java.vavr.ValidationSuite.MyClass, co.com.s4n.training.java.vavr.ValidationSuite, co.com.s4n.training.java.vavr.ValidationSuite.TestValidation)[0m
-[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated sources:Set(/home/s4n/Desktop/java-training/src/test/java/co/com/s4n/training/java/vavr/ValidationSuite.java)[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated classes: Set(co.com.s4n.training.java.vavr.FacturaTryRecover)[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated sources:Set(/home/s4n/Desktop/java-training/src/test/java/co/com/s4n/training/java/vavr/FacturaTryRecover.java)[0m
 [0m[[0m[0minfo[0m] [0m[0mCompiling 1 Java source to /home/s4n/Desktop/java-training/target/test-classes ...[0m
-[0m[[0m[0mdebug[0m] [0m[0mAttempting to call com.sun.tools.javac.api.JavacTool@456df0aa directly...[0m
-[0m[[0m[0mdebug[0m] [0m[0mJava compilation took 0.065176224 s[0m
-[0m[[0m[0mdebug[0m] [0m[0mJava analysis took 0.021451547 s[0m
-[0m[[0m[0mdebug[0m] [0m[0mJava compilation + analysis took 0.087277914 s[0m
+[0m[[0m[0mdebug[0m] [0m[0mAttempting to call com.sun.tools.javac.api.JavacTool@11348c68 directly...[0m
+[0m[[0m[0mdebug[0m] [0m[0mJava compilation took 0.495179261 s[0m
+[0m[[0m[0mdebug[0m] [0m[0mJava analysis took 0.069639713 s[0m
+[0m[[0m[0mdebug[0m] [0m[0mJava compilation + analysis took 0.569776065 s[0m
 [0m[[0m[0minfo[0m] [0m[0mDone compiling.[0m
 [0m[[0m[0mdebug[0m] [0m[0mNew invalidations:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Set()[0m

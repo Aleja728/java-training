@@ -6,9 +6,9 @@ import org.junit.jupiter.api.Test;
 import org.junit.platform.runner.IncludeEngines;
 import org.junit.platform.runner.JUnitPlatform;
 import org.junit.runner.RunWith;
+import static org.junit.jupiter.api.Assertions.*;
 
 import static io.vavr.API.Success;
-import static junit.framework.TestCase.assertEquals;
 
 @RunWith(JUnitPlatform.class)
 @IncludeEngines("junit-jupiter")
