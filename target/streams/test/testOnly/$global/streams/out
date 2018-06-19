@@ -1,5 +1,5 @@
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(co.com.s4n.training.java.vavr.FacturaTryRecover, com.novocode.junit.RunWithFingerprint@1a9b413a, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(co.com.s4n.training.java.vavr.TrySuite, com.novocode.junit.RunWithFingerprint@640c4991, false, [SuiteSelector])[0m
 [0m[[0m[0mdebug[0m] [0m[0mSummary for JUnit not available.[0m
-[0m[[0m[0minfo[0m] [0m[0mPassed: Total 4, Failed 0, Errors 0, Passed 4[0m
+[0m[[0m[0minfo[0m] [0m[0mPassed: Total 31, Failed 0, Errors 0, Passed 31[0m
 [0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	co.com.s4n.training.java.vavr.FacturaTryRecover[0m
+[0m[[0m[0mdebug[0m] [0m[0m	co.com.s4n.training.java.vavr.TrySuite[0m

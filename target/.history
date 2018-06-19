@@ -47,3 +47,5 @@ git flow feature publish Junit5
 exit
 testOnly co.com.s4n.training.java.vavr.FacturaTryRecover
 exit
+testOnly co.com.s4n.training.java.vavr.TrySuite
+exit
