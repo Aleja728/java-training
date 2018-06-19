@@ -158,6 +158,25 @@ public class ValidationSuite
         // Cambialo para que verifiques con fold! :D
     }
 
+    @Test
+    public void testCombineWithAnInvalidFold(){
+
+        Validation<Error,String> valid = Validation.valid("Lets");
+        Validation<Error,String> valid2 = Validation.valid("Go!");
+        Validation<Error, String> invalid = Validation.invalid(new Error("Stop!"));
+
+        Validation<Seq<Error>, String> finalValidation = Validation.combine(valid, invalid , valid2).ap((v1,v2,v3) -> v1 + v2 + v3);
+
+
+        /*finalValidation.fold(s -> {
+                    assertTrue(s.size()==3);
+                    assertTrue(s.contains());
+                    return s.size();
+                },
+                c -> 2);*/
+
+    }
+
     /**
      * Combinar multiples validations todas validas
      */
@@ -235,6 +254,7 @@ public class ValidationSuite
                 result8.ap(TestValidation::new).toString());
     }
 
+
     /**
      *  Me permite recorrer una coleccion de Validation y operarlos
      */
@@ -255,6 +275,33 @@ public class ValidationSuite
         validation.forEach(consumer);
         assertEquals("Failure- Was not operated",
                 Arrays.asList("Operacion 0","Operacion 1","Operacion 2"),msg);
+    }
+
+    @Test
+    public void TestValidationAll(){
+
+        validOrInvalid valid = new validOrInvalid();
+
+        Validation.Builder5 <Error,  Integer,Integer,Integer,Integer,Integer> result = Validation
+                .combine(valid.execute(1),valid.execute(5),valid.execute(3),valid.execute(6),valid.execute(7));
+
+        assertEquals(valid.count,3);
+    }
+
+    class validOrInvalid {
+        int count =0;
+        public Validation<Error, Integer> execute(Integer i) {
+            Validation<Error, Integer> v;
+
+            if (i > 4) {
+                v = Validation.valid(i);
+                count++;
+            } else {
+                v = Validation.invalid(new Error("Error"));
+            }
+
+            return v;
+        }
     }
 
     /**

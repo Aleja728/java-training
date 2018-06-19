@@ -169,20 +169,20 @@ public class LambdaSuite {
 
 
 
-
+/*
     @FunctionalInterface
     interface InterfaceDeEjemplo2{
         Consumer<Integer> metodoDeEjemplo2(Supplier<Integer> a, Supplier<Integer> b, Supplier<Integer> c);
-    }
+    }*/
 
-
+/*
     @Test
     public void ejercicio(){
 
         InterfaceDeEjemplo2 i = (x,y,z)->{
             Consumer<Integer> c = n -> {
                 Integer resultado = a.get() + b.get() + c.get()+n;
-                System.out.println("Consumer: " +resultado)
+                System.out.println("Consumer: " +resultado);
             };
             return c;
         };
@@ -194,7 +194,7 @@ public class LambdaSuite {
         Consumer<Integer> consumer = i.metodoDeEjemplo2(a, b, c);
 
         consumer.accept(new Integer(9));
-    }
+    }*/
 
 
 }

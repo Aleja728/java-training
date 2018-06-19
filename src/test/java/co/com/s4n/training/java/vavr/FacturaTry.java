@@ -8,7 +8,7 @@ import static io.vavr.API.Success;
 import static junit.framework.TestCase.assertEquals;
 
 public class FacturaTry {
-
+/*
 
     @Test
     public void FacturaRecoverSuccess(){
@@ -45,5 +45,5 @@ public class FacturaTry {
                         .flatMap(r1 -> Factura.calcularRetencion(r1,19))
                         ));
         assertEquals(Success(12852.0),res);
-    }
+    }*/
 }
