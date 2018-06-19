@@ -175,8 +175,10 @@ public class LambdaSuite {
         Consumer<Integer> metodoDeEjemplo2(Supplier<Integer> a, Supplier<Integer> b, Supplier<Integer> c);
     }*/
 
+
 /*
-    @Test
+
+    /*@Test
     public void ejercicio(){
 
         InterfaceDeEjemplo2 i = (x,y,z)->{

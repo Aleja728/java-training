@@ -2,6 +2,10 @@ package co.com.s4n.training.java.vavr;
 
 
 import co.com.s4n.training.java.Factura;
+<<<<<<< HEAD
+=======
+
+>>>>>>> feature/EitherVavr
 import org.junit.Test;
 
 
@@ -294,7 +298,6 @@ public class OptionSuite {
         assertEquals(integers,Some(6));
     }
 
-
     private Option<Integer> sumar(int a, int b){
         System.out.println("sumando " +a+ " + "+b);
         return Option.of(a+b);
@@ -332,13 +335,16 @@ public class OptionSuite {
     }
 /*
     @Test
-    public void flatMapInOption(){
+    public void flatMapInOption() {
         Option<Integer> o1 = Option.of(1);
-        Option<Option<Integer>> m = o1.map(i -> Option(identidadPosibleNull(i.intValue()-3)));
+        Option<Option<Integer>> m = o1.map(i -> Option(identidadPosibleNull(i.intValue() - 3)));
         Option<Integer> y = o1
                 .flatMap(i -> Option.of(identidadPosibleNull(i.intValue()-3)));
 
     @Test
+                .flatMap(i -> Option.of(identidadPosibleNull(i.intValue() - 3)));
+    }
+   /* @Test
     public void FacturaFlatMap1(){
         Option<Double> valorTotal =
                 Factura.calcularSubTotal("cuaderno,10000;lapiz,2000")
