@@ -1,3 +1,13 @@
 #Successful Tests
-#Thu Jun 14 16:43:08 COT 2018
-co.com.s4n.training.java.vavr.OptionSuite=1529012588533
+#Tue Jun 19 15:19:11 COT 2018
+co.com.s4n.training.java.jdk.CompletableFutureSuite=1529439047134
+co.com.s4n.training.java.jdk.StreamsSuite=1529439063412
+co.com.s4n.training.java.vavr.TrySuite=1529439394194
+co.com.s4n.training.java.vavr.EitherSuite=1529439111689
+co.com.s4n.training.java.vavr.ListSuite=1529439223309
+co.com.s4n.training.java.vavr.FunctionSuite=1529439163584
+co.com.s4n.training.java.vavr.ValidationSuite=1529439551968
+co.com.s4n.training.java.vavr.FacturaTryRecover=1529439123052
+co.com.s4n.training.java.vavr.OptionSuite=1529439283012
+co.com.s4n.training.java.vavr.FutureSuite=1529439206858
+co.com.s4n.training.java.jdk.LambdaSuite=1529439057479

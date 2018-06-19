@@ -2,11 +2,17 @@ package co.com.s4n.training.java.vavr;
 
 import io.vavr.Lazy;
 import io.vavr.concurrent.Future;
-import org.junit.Test;
+
+import org.junit.platform.runner.IncludeEngines;
+import org.junit.platform.runner.JUnitPlatform;
+import org.junit.runner.RunWith;
+import org.junit.jupiter.api.Test;
 
 import java.util.function.Supplier;
 
-    public class LazySuite {
+@RunWith(JUnitPlatform.class)
+@IncludeEngines("junit-jupiter")
+public class LazySuite {
 
         private void sleep(int milliseconds){
             try{
@@ -102,9 +108,6 @@ import java.util.function.Supplier;
 
             elapsed = (fin2M-inicio2M)*Math.pow(10 ,- 6);
             System.out.println("lazy 4: "+elapsed);
-
-
-
 
         }
 

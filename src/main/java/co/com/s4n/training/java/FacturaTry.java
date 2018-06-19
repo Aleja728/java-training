@@ -1,7 +1,6 @@
 package co.com.s4n.training.java;
 
 import io.vavr.control.Try;
-import org.omg.PortableInterceptor.SUCCESSFUL;
 
 public class FacturaTry {
 

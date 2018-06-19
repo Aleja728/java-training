@@ -2,8 +2,6 @@ package co.com.s4n.training.java.vavr;
 
 import co.com.s4n.training.java.Factura;
 
-import org.junit.Test;
-
 
 import io.vavr.PartialFunction;
 import io.vavr.control.Option;
@@ -11,6 +9,11 @@ import io.vavr.control.Option;
 import static io.vavr.API.None;
 import io.vavr.Tuple;
 import io.vavr.Tuple2;
+import org.junit.jupiter.api.Test;
+import org.junit.platform.runner.IncludeEngines;
+import org.junit.platform.runner.JUnitPlatform;
+import org.junit.runner.RunWith;
+
 import java.util.ArrayList;
 
 import static io.vavr.API.*;
@@ -21,9 +24,10 @@ import java.util.List;
 import java.util.Optional;
 
 import static io.vavr.API.Some;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
+@RunWith(JUnitPlatform.class)
+@IncludeEngines("junit-jupiter")
 public class OptionSuite {
 
 
@@ -102,11 +106,11 @@ public class OptionSuite {
     public void testOptionWithFilter() {
         Option<Integer> o = Option(3);
 
-        assertEquals("Does not Exist the filter",
+        assertEquals(
                 Some(3),
                 o.filter(it -> it >= 3));
 
-        assertEquals("Does not Exist the filter",
+        assertEquals(
                 None(),
                 o.filter(it -> it > 3));
     }
@@ -128,8 +132,8 @@ public class OptionSuite {
         Option<Integer> o2 = None();
 
         //Comparacion de Some o None()
-        assertEquals("Failure match optionList", "Existe", patternMatchSimple(o1));
-        assertEquals("Failure match optionList2", "Imaginario", patternMatchSimple(o2));
+        assertEquals("Existe", patternMatchSimple(o1));
+        assertEquals( "Imaginario", patternMatchSimple(o2));
     }
     /**
      *
@@ -145,11 +149,11 @@ public class OptionSuite {
 
         System.out.println("peek: "+ peek);
 
-        assertEquals("failed - peek did not return the same Option value",
+        assertEquals(
                 Option.of("Hello!"),
                 defined_option);
 
-        assertEquals("failed - peek did not apply the side effect",
+        assertEquals(
                 "Hello!",
                 list.get(0));
     }
@@ -163,14 +167,14 @@ public class OptionSuite {
         Option<String> text = Option.of(textToCount);
         Option<Integer> count = text.transform(s -> Option.of(s.getOrElse("DEFAULT").length()));
 
-        assertEquals("failure - Option was not transformed",
+        assertEquals(
                 Option.of(textToCount.length()),
                 count);
 
         Option<String> hello = Option.of("Hello");
         Tuple2<String, String> result = hello.transform(s -> Tuple.of("OK", s.getOrElse("DEFAULT")));
 
-        assertEquals("failure - Option was not transformed",
+        assertEquals(
                 Tuple.of("OK", "Hello"),
                 result);
 
@@ -183,8 +187,8 @@ public class OptionSuite {
     public void testGetOrElse(){
         Option<String> defined_option = Option.of("Hello!");
         Option<String> none = None();
-        assertEquals("failure - getOrElse did not get the current value of Option", "Hello!", defined_option.getOrElse("Goodbye!"));
-        assertEquals("failure - getOrElse did not replace None", "Goodbye!", none.getOrElse("Goodbye!"));
+        assertEquals("Hello!", defined_option.getOrElse("Goodbye!"));
+        assertEquals( "Goodbye!", none.getOrElse("Goodbye!"));
     }
 
     /**
@@ -194,8 +198,8 @@ public class OptionSuite {
     public void testWhenMethod(){
         Option<String> valid = Option.when(true, "Good!");
         Option<String> invalid = Option.when(false, "Bad!");
-        assertEquals("failed - the Option value must contain a Some('Good!')", Some("Good!"), valid);
-        assertEquals("failed - the Option value must contein a None because the condtion is false", None(), invalid);
+        assertEquals( Some("Good!"), valid);
+        assertEquals(None(), invalid);
     }
 
     @Test
@@ -211,8 +215,8 @@ public class OptionSuite {
                 return i % 2 == 1;
             }
         };
-        assertEquals("Failure, it returned Some() it should returned None()", None(),Option.of(2).collect(pf));
-        assertEquals("Failure, it returned Some() it should returned None()", None(),Option.<Integer>none().collect(pf));
+        assertEquals(None(),Option.of(2).collect(pf));
+        assertEquals(None(),Option.<Integer>none().collect(pf));
     }
     /**
      * En este test se prueba la funcionalidad para el manejo de Null en Option con FlatMap
@@ -223,7 +227,7 @@ public class OptionSuite {
         Option<String> someN = valor.map(v -> null);
 
         /* Se valida que devuelve un Some null lo cual podria ocasionar en una Excepcion de JavanullPointerExcepcion*/
-        assertEquals("The option someN is Some(null)",
+        assertEquals(
                 someN.get(),
                 null);
 
@@ -237,7 +241,7 @@ public class OptionSuite {
                     return x.toUpperCase() +"Validacion";
                 });
 
-        assertEquals("The option is not defined because result is None",
+        assertEquals(
                 None(),
                 buenUso);
     }
@@ -251,7 +255,7 @@ public class OptionSuite {
 
         Option<String> myResultMapOne = myMap.map(s -> s + " es bonito");
 
-        assertEquals("Transform Option with Map",
+        assertEquals(
                 Option.of("mi mapa es bonito"),
                 myResultMapOne);
 
@@ -260,7 +264,7 @@ public class OptionSuite {
                 .map(v -> v + " con flat map");
 
 
-        assertEquals("Transform Option with flatMap",
+        assertEquals(
                 Option.of("mi mapa es bonito con flat map"),
                 myResultMapTwo);
     }

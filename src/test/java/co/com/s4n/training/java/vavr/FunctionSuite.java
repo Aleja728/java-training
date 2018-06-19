@@ -2,15 +2,19 @@ package co.com.s4n.training.java.vavr;
 
 import io.vavr.control.Option;
 import io.vavr.control.Try;
-import org.junit.Test;
 import io.vavr.*;
+import org.junit.jupiter.api.Test;
+import org.junit.platform.runner.IncludeEngines;
+import org.junit.platform.runner.JUnitPlatform;
+import org.junit.runner.RunWith;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
+@RunWith(JUnitPlatform.class)
+@IncludeEngines("junit-jupiter")
 public class FunctionSuite {
 
 
@@ -24,7 +28,7 @@ public class FunctionSuite {
     @Test
     public void t1() {
         Function1<String, String> function1 = Function1.of(this::fun);
-        assertTrue("Failure - compose the funtion from reference", function1.apply("Juan").equals("Hello World Juan"));
+        assertTrue( function1.apply("Juan").equals("Hello World Juan"),"Failure - compose the funtion from reference");
     }
 
     /**
@@ -48,10 +52,10 @@ public class FunctionSuite {
         Function3<Integer,Integer,Integer, Try<Integer>> fTry =  Function3.liftTry(f);
         Function1<Integer, Try<Integer>> f1Try = Function1.liftTry(this::divideNumber);
 
-        assertEquals("Valide None with lift",true,!fOption.apply(1,0,2).isDefined());
-        assertEquals("Valide Some with lift",true,f1Option.apply(80).isDefined());
-        assertEquals("Valide Try Failure with liftTry",true,fTry.apply(1,0,2).isFailure());
-        assertEquals("Valide Try Succes with liftTry",true,f1Try.apply(80).isSuccess());
+        assertEquals(true,!fOption.apply(1,0,2).isDefined(),"Valide None with lift");
+        assertEquals(true,f1Option.apply(80).isDefined(),"Valide Some with lift");
+        assertEquals(true,fTry.apply(1,0,2).isFailure(),"Valide Try Failure with liftTry");
+        assertEquals(true,f1Try.apply(80).isSuccess(),"Valide Try Succes with liftTry");
     }
 
 
@@ -72,13 +76,12 @@ public class FunctionSuite {
 
         Function1<String, String> compositionCompose = g.compose(f);
 
-        assertEquals("failure - implementation andThen",
-                "Iniciar Primer paso Segundo Paso",
-                compositionAndThen.apply("Iniciar"));
+        assertEquals("Iniciar Primer paso Segundo Paso",
+                compositionAndThen.apply("Iniciar"),"failure - implementation andThen");
 
-        assertEquals("failure - implementation Compose",
+        assertEquals(
                 "Iniciar Primer paso Segundo Paso",
-                compositionCompose.apply("Iniciar"));
+                compositionCompose.apply("Iniciar"),"failure - implementation Compose");
     }
 
     /**
@@ -91,11 +94,9 @@ public class FunctionSuite {
 
         Function1<String, Integer> compositionAndThen = f.andThen(g);
         Function1<String, Integer> compositionCompose = g.compose(f);
-        assertTrue("failure - implementation andThen",
-                compositionAndThen.apply("Iniciar") == 12);
+        assertTrue(compositionAndThen.apply("Iniciar") == 12,"failure - implementation andThen");
 
-        assertTrue("failure - implementation Compose",
-                compositionCompose.apply("Iniciar") == 12);
+        assertTrue(compositionCompose.apply("Iniciar") == 12,"failure - implementation Compose");
 
     }
 
@@ -108,10 +109,10 @@ public class FunctionSuite {
     public void t5(){
 
         Function2<Integer, Integer, Integer> add = (a, b) -> a + b;
-        assertEquals("failure - Function add must return 5 for params (2,3) ", new Integer(5), add.apply(3 , 2));
+        assertEquals(new Integer(5), add.apply(3 , 2),"failure - Function add must return 5 for params (2,3) ");
 
         Function1<Integer , Integer> addTwo = add.apply(2);
-        assertEquals("failure - Function addTwo must return the param plus 2", new Integer(5), addTwo.apply(3));
+        assertEquals(new Integer(5), addTwo.apply(3),"failure - Function addTwo must return the param plus 2");
     }
 
 
@@ -132,49 +133,55 @@ public class FunctionSuite {
 
         int total = add2.apply("This is a paragraph").apply("This is a footer");
 
-        assertEquals("failure - the total lenght did not match", 68, total);
+        assertEquals(68, total,"failure - the total lenght did not match");
     }
 
     /**
      * Se puede crear una función que lance una checked exception
      */
-    @Test(expected = FileNotFoundException.class)
+    @Test
     public void t7() throws Throwable {
-        CheckedFunction1<String, String> readFile = new CheckedFunction1<String, String>() {
-            @Override
-            public String apply(String s) throws FileNotFoundException {
-                FileInputStream fis = null;
-                try {
-                    fis = new FileInputStream(s);
-                } catch (FileNotFoundException fnfe) {
-                    throw fnfe;
-                }
-                return "OK";
-            }
-        };
-        readFile.apply("somefile.txt");
-
-        /**
-         * En caso de function, este no es capaz de manejar la excepción y requiere
-         * realizar un nuevo try si se desea lanzar el error
-         */
-        Function1<String, String> readFile2 = new Function1<String, String>() {
-            @Override
-            public String apply(String s) {
-                FileInputStream fis = null;
-                try {
-                    fis = new FileInputStream(s);
-                } catch (FileNotFoundException fnfe) {
+        assertThrows(FileNotFoundException.class, () -> {
+            CheckedFunction1<String, String> readFile = new CheckedFunction1<String, String>() {
+                @Override
+                public String apply(String s) throws FileNotFoundException {
+                    FileInputStream fis = null;
                     try {
+                        fis = new FileInputStream(s);
+                    } catch (FileNotFoundException fnfe) {
                         throw fnfe;
-                    } catch (FileNotFoundException e) {
-                        return "ERROR";
                     }
+                    return "OK";
                 }
-                return "OK";
-            }
-        };
-        assertEquals("failure - the function read the file successfully", "ERROR", readFile2.apply("somefile.txt"));
+            };
+            readFile.apply("somefile.txt");
+
+            /**
+             * En caso de function, este no es capaz de manejar la excepción y requiere
+             * realizar un nuevo try si se desea lanzar el error
+             */
+            Function1<String, String> readFile2 = new Function1<String, String>() {
+                @Override
+                public String apply(String s) {
+                    FileInputStream fis = null;
+                    try {
+                        fis = new FileInputStream(s);
+                    } catch (FileNotFoundException fnfe) {
+                        try {
+                            throw fnfe;
+                        } catch (FileNotFoundException e) {
+                            return "ERROR";
+                        }
+                    }
+                    return "OK";
+                }
+            };
+
+            assertEquals("ERROR", readFile2.apply("somefile.txt"));
+        });
+
+
+
     }
 
     /**
@@ -187,9 +194,9 @@ public class FunctionSuite {
         Double valOne = useMemoized.apply();
         Double valTwo = useMemoized.apply();
         Double valThree = useMemoized.apply();
-        assertEquals("Them some result in random",val,valOne);
-        assertEquals("Them some result in random",val,valTwo);
-        assertEquals("Them some result in random",val,valThree);
+        assertEquals(val,valOne);
+        assertEquals(val,valTwo);
+        assertEquals(val,valThree);
     }
 
 }

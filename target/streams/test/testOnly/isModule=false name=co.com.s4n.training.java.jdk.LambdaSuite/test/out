@@ -1,22 +1,20 @@
 [0m[[0m[0mdebug[0m] [0m[0m[34mTest run started[0m[0m
-[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mLambdaSuite[0m.[36msmokeTest[0m started[0m
-[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mLambdaSuite[0m.[36msmokeTest[0m finished, took 0.001 sec[0m
-[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mLambdaSuite[0m.[36mEjercicio[0m started[0m
-[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mLambdaSuite[0m.[36mEjercicio[0m finished, took 0.002 sec[0m
-[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mLambdaSuite[0m.[36musarUnaInterfaceFuncional1[0m started[0m
-[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mLambdaSuite[0m.[36musarUnaInterfaceFuncional1[0m finished, took 0.001 sec[0m
-[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mLambdaSuite[0m.[36musarUnaInterfaceFuncional2[0m started[0m
-[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mLambdaSuite[0m.[36musarUnaInterfaceFuncional2[0m finished, took 0.0 sec[0m
-[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mLambdaSuite[0m.[36musarUnaInterfaceFuncional3[0m started[0m
-[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mLambdaSuite[0m.[36musarUnaInterfaceFuncional3[0m finished, took 0.0 sec[0m
-[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mLambdaSuite[0m.[36musarUnaInterfaceFuncional4[0m started[0m
-[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mLambdaSuite[0m.[36musarUnaInterfaceFuncional4[0m finished, took 0.0 sec[0m
-[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mLambdaSuite[0m.[36musarUnaFuncionConConsumer1[0m started[0m
-[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mLambdaSuite[0m.[36musarUnaFuncionConConsumer1[0m finished, took 0.001 sec[0m
-[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mLambdaSuite[0m.[36musarUnaFuncionConTiposPrimitivos[0m started[0m
-[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mLambdaSuite[0m.[36musarUnaFuncionConTiposPrimitivos[0m finished, took 0.001 sec[0m
-[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mLambdaSuite[0m.[36musarUnaFuncionConSupplier[0m started[0m
-[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mLambdaSuite[0m.[36musarUnaFuncionConSupplier[0m finished, took 0.002 sec[0m
-[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mLambdaSuite[0m.[36musarUnaFuncionConConsumer[0m started[0m
-[0m[[0m[0mdebug[0m] [0m[0mTest co.com.s4n.training.java.jdk.[33mLambdaSuite[0m.[36musarUnaFuncionConConsumer[0m finished, took 0.004 sec[0m
-[0m[[0m[0mdebug[0m] [0m[0m[34mTest run finished: [0m[34m0 failed[0m[34m, [0m[34m0 ignored[0m[34m, 10 total, 0.024s[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest [33mLambdaSuite[0m.[36msmokeTest()[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest [33mLambdaSuite[0m.[36msmokeTest()[0m finished, took 0.003 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest [33mLambdaSuite[0m.[36musarUnaInterfaceFuncional3()[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest [33mLambdaSuite[0m.[36musarUnaInterfaceFuncional3()[0m finished, took 0.0 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest [33mLambdaSuite[0m.[36musarUnaFuncionConSupplier()[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest [33mLambdaSuite[0m.[36musarUnaFuncionConSupplier()[0m finished, took 0.002 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest [33mLambdaSuite[0m.[36musarUnaFuncionConTiposPrimitivos()[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest [33mLambdaSuite[0m.[36musarUnaFuncionConTiposPrimitivos()[0m finished, took 0.0 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest [33mLambdaSuite[0m.[36musarUnaInterfaceFuncional4()[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest [33mLambdaSuite[0m.[36musarUnaInterfaceFuncional4()[0m finished, took 0.001 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest [33mLambdaSuite[0m.[36musarUnaFuncionConConsumer()[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest [33mLambdaSuite[0m.[36musarUnaFuncionConConsumer()[0m finished, took 0.0 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest [33mLambdaSuite[0m.[36musarUnaInterfaceFuncional1()[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest [33mLambdaSuite[0m.[36musarUnaInterfaceFuncional1()[0m finished, took 0.0 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest [33mLambdaSuite[0m.[36musarUnaInterfaceFuncional2()[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest [33mLambdaSuite[0m.[36musarUnaInterfaceFuncional2()[0m finished, took 0.0 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest [33mLambdaSuite[0m.[36musarUnaFuncionConConsumer1()[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest [33mLambdaSuite[0m.[36musarUnaFuncionConConsumer1()[0m finished, took 0.0 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0m[34mTest run finished: [0m[34m0 failed[0m[34m, [0m[34m0 ignored[0m[34m, 9 total, 0.024s[0m[0m

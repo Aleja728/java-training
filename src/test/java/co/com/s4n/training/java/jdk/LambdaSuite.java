@@ -1,12 +1,17 @@
 package co.com.s4n.training.java.jdk;
 
-import static org.junit.Assert.*;
-import org.junit.Test;
 import java.util.function.BiFunction;
 import java.util.function.Consumer;
 import java.util.function.IntBinaryOperator;
 import java.util.function.Supplier;
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
+import org.junit.platform.runner.IncludeEngines;
+import org.junit.platform.runner.JUnitPlatform;
+import org.junit.runner.RunWith;
 
+@RunWith(JUnitPlatform.class)
+@IncludeEngines("junit-jupiter")
 public class LambdaSuite {
 
     //@FunctionalInterface
@@ -169,34 +174,6 @@ public class LambdaSuite {
 
 
 
-/*
-    @FunctionalInterface
-    interface InterfaceDeEjemplo2{
-        Consumer<Integer> metodoDeEjemplo2(Supplier<Integer> a, Supplier<Integer> b, Supplier<Integer> c);
-    }*/
-
-
-/*
-
-    /*@Test
-    public void ejercicio(){
-
-        InterfaceDeEjemplo2 i = (x,y,z)->{
-            Consumer<Integer> c = n -> {
-                Integer resultado = a.get() + b.get() + c.get()+n;
-                System.out.println("Consumer: " +resultado);
-            };
-            return c;
-        };
-
-        Supplier a = () ->  1;
-        Supplier b = () ->  2;
-        Supplier c = () ->  3;
-
-        Consumer<Integer> consumer = i.metodoDeEjemplo2(a, b, c);
-
-        consumer.accept(new Integer(9));
-    }*/
 
 
 }

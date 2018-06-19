@@ -5,3 +5,43 @@ testOnly co.com.s4n.training.java.vavr.OptionSuite
 exit
 testOnly co.com.s4n.training.java.vavr.OptionSuite
 exit
+testOnly co.com.s4n.training.java.jdk.CompletableFutures
+exit
+testOnly co.com.s4n.training.java.jdk.CompletableFutures
+exit
+testOnly co.com.s4n.training.java.jdk.CompletableFutures
+testOnly co.com.s4n.training.java.jdk.CompletableFutureSuitee
+testOnly co.com.s4n.training.java.jdk.CompletableFutureSuite
+testOnly co.com.s4n.training.java.jdk.LambdaSuite
+testOnly co.com.s4n.training.java.jdk.StreamsSuite
+testOnly co.com.s4n.training.java.jdk.EitherSuite
+testOnly co.com.s4n.training.java.vavr.EitherSuite
+testOnly co.com.s4n.training.java.vavr.FacturaTryRecover
+testOnly co.com.s4n.training.java.vavr.FuctionSuite
+testOnly co.com.s4n.training.java.vavr.FunctionSuite
+testOnly co.com.s4n.training.java.jdk.StreamsSuite
+testOnly co.com.s4n.training.java.vavr.FunctionSuite
+testOnly co.com.s4n.training.java.vavr.FutureSuite
+testOnly co.com.s4n.training.java.vavr.LazySuite
+testOnly co.com.s4n.training.java.vavr.ListSuite
+testOnly co.com.s4n.training.java.vavr.LazySuite
+testOnly co.com.s4n.training.java.vavr.ListSuite
+testOnly co.com.s4n.training.java.vavr.ValidationSuite
+testOnly co.com.s4n.training.java.vavr
+testOnly co.com.s4n.training.java.vavr.CompletableFutures
+testOnly co.com.s4n.training.java.vavr.CompletableFutureSuite
+testOnly co.com.s4n.training.java.jdk.CompletableFutureSuite
+testOnly co.com.s4n.training.java.jdk.LambdaSuite
+testOnly co.com.s4n.training.java.jdk.StreamsSuite
+testOnly co.com.s4n.training.java.vavr.EitherSuite
+testOnly co.com.s4n.training.java.vavr.FacturaTryRecover
+testOnly co.com.s4n.training.java.vavr.FunctionSuite
+testOnly co.com.s4n.training.java.vavr.FutureSuite
+testOnly co.com.s4n.training.java.vavr.LazySuite
+testOnly co.com.s4n.training.java.vavr.FutureSuite
+testOnly co.com.s4n.training.java.vavr.ListSuite
+testOnly co.com.s4n.training.java.vavr.OptionSuite
+testOnly co.com.s4n.training.java.vavr.TrySuite
+testOnly co.com.s4n.training.java.vavr.ValidationSuite
+git flow feature publish Junit5
+exit

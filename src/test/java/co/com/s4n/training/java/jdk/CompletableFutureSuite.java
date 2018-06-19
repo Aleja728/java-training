@@ -1,15 +1,19 @@
 package co.com.s4n.training.java.jdk;
 
-import static org.junit.Assert.*;
-
-import org.junit.Ignore;
-import org.junit.Test;
-
 import java.util.concurrent.*;
 import java.util.Date;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 
+import org.junit.jupiter.api.Test;
+import org.junit.platform.runner.IncludeEngines;
+import org.junit.platform.runner.JUnitPlatform;
+import org.junit.runner.RunWith;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+@RunWith(JUnitPlatform.class)
+@IncludeEngines("junit-jupiter")
 public class CompletableFutureSuite {
 
     private void sleep(int milliseconds){
@@ -27,6 +31,7 @@ public class CompletableFutureSuite {
     }
 
     @Test
+
     public void t1() {
 
         CompletableFuture<String> completableFuture
@@ -45,7 +50,7 @@ public class CompletableFutureSuite {
 
         try {
             String s = completableFuture.get(500, TimeUnit.MILLISECONDS);
-            assertEquals(s, "Hello");
+            assertEquals(s,"Hello");
         }catch(Exception e){
             assertTrue(false);
         }finally{
