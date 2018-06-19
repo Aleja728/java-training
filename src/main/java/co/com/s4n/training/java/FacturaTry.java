@@ -3,7 +3,7 @@ package co.com.s4n.training.java;
 import io.vavr.control.Try;
 import org.omg.PortableInterceptor.SUCCESSFUL;
 
-public class Factura {
+public class FacturaTry {
 
     // elemento1,valor;elemento2,valor;elemento3,valor
     public static Try<Double> calcularSubTotal(String elementoValor){
