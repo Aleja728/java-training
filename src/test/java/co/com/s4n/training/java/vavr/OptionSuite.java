@@ -1,11 +1,7 @@
 package co.com.s4n.training.java.vavr;
 
-
 import co.com.s4n.training.java.Factura;
-<<<<<<< HEAD
-=======
 
->>>>>>> feature/EitherVavr
 import org.junit.Test;
 
 
