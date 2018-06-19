@@ -1,8 +1,6 @@
 package co.com.s4n.training.java.vavr;
 
 
-import co.com.s4n.training.java.Factura;
-
 import org.junit.Test;
 
 
